@@ -1,0 +1,10 @@
+<!--
+    <div class="oo_footerWrap">
+        <div class="oo_footer">
+            <p>&copy; 2016 - Open Orbit</p>
+            <script type="text/javascript">
+                try{f_cbload(true, oo.ServerName(), oo.AppKey("WelcomeMessage"));}catch(v_e){console.log(v_e);}
+            </script>
+        </div>
+    </div><!-- end oo_footerWrap -->
+</div><!-- end oo_contentWrap -->

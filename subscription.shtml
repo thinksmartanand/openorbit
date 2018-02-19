@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Subscription</title>
+    <!--#include virtual="head.shtml" -->
+</head>
+<body>
+
+<!--#include virtual="header.shtml" -->
+
+<div class="container sb-site-container">
+  <div class="headTitle">Subscription</div>
+  <ul class="SubscriptionCol">
+  	<li class="marginT20">
+    	<div class="SubHeadCol color1">Power User <i class="arrow1"></i></div>
+        <ul class="SubDetails">
+            <li>Recommended plan for current or prospective <strong>practitioners</strong> of process improvement.</li>
+            <li class="greyBG">Usually but not necessarily in full time "<strong>change agent</strong>" roles;</li>
+            <li>Also known as <strong>Black Belts</strong> in LSS terminology, although that term also implies formal certification to that effect which is not essential to benefit from this subscription.</li>
+            <li class="greyBG"><strong>Full access</strong> to project creation, Mentored Thinking and the ability to allow others to access your projects through the Permissions mechanism</li>
+        </ul>
+        <div class="text-center"><a href="javascript:void(0)" class="btn-primary" type="button">Subscribe</a></div>
+    </li>
+    <li class="marginT20">
+    	<div class="SubHeadCol color2">Governance User <i class="arrow2"></i></div>
+        <ul class="SubDetails">
+            <li>Recommended plan for current or prospective <strong>practitioners</strong> of process improvement.</li>
+            <li class="greyBG">Usually but not necessarily in full time "<strong>change agent</strong>" roles;</li>
+            <li>Also known as <strong>Black Belts</strong> in LSS terminology, although that term also implies formal certification to that effect which is not essential to benefit from this subscription.</li>
+            <li class="greyBG"><strong>Full access</strong> to project creation, Mentored Thinking and the ability to allow others to access your projects through the Permissions mechanism</li>
+        </ul>
+        <div class="text-center"><a href="javascript:void(0)" class="btn-primary" type="button">Subscribe</a></div>
+    </li>
+    <li>
+    	<div class="SubHeadCol color3">Ops User <i class="arrow3"></i></div>
+        <ul class="SubDetails">
+            <li>Recommended plan for current or prospective <strong>practitioners</strong> of process improvement.</li>
+            <li class="greyBG">Usually but not necessarily in full time "<strong>change agent</strong>" roles;</li>
+            <li>Also known as <strong>Black Belts</strong> in LSS terminology, although that term also implies formal certification to that effect which is not essential to benefit from this subscription.</li>
+            <li class="greyBG"><strong>Full access</strong> to project creation, Mentored Thinking and the ability to allow others to access your projects through the Permissions mechanism</li>
+        </ul>
+        <div class="text-center"><a href="javascript:void(0)" class="btn-primary" type="button">Subscribe</a></div>
+    </li>
+    <li class="marginT20">
+    	<div class="SubHeadCol color4">Admin User <i class="arrow4"></i></div>
+        <ul class="SubDetails">
+            <li>Recommended plan for current or prospective <strong>practitioners</strong> of process improvement.</li>
+            <li class="greyBG">Usually but not necessarily in full time "<strong>change agent</strong>" roles;</li>
+            <li>Also known as <strong>Black Belts</strong> in LSS terminology, although that term also implies formal certification to that effect which is not essential to benefit from this subscription.</li>
+            <li class="greyBG"><strong>Full access</strong> to project creation, Mentored Thinking and the ability to allow others to access your projects through the Permissions mechanism</li>
+        </ul>
+        <div class="text-center"><a href="javascript:void(0)" class="btn-primary" type="button">Subscribe</a></div>
+    </li>
+  </ul> 
+</div>
+
+<!-- Include Apply For Account Popup, Tablet & Mobile navigation function, FancyBox function & JavaScript tab function add -->
+<!--#include virtual="scripts.shtml" -->
+
+</body>
+</html>

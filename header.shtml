@@ -1,0 +1,90 @@
+<!--#include virtual="slidebar.shtml" -->
+<!--
+<div class="oo_globalWrap">
+    <div class="oo_stickyWrap">-->
+<div id="oo_js_popoverElements">
+    <div class="oo_modal-wrap" id="oo_js_template-modal" style="display: none;">
+        <div class="oo_modal-wrap_inner">
+            <div class="oo_modal-wrap_content">
+                <div class="oo_modal">
+                    <a class="oo_modal-close" title="Close" data-template-close></a>
+                    <h1 class="oo_modal-header" data-template-header></h1>
+                    <div class="oo_modal-content_wrap">
+                        <div class="oo_modal-content" data-template-content></div>
+                    </div>
+                    <div class="oo_modal-footer" data-template-footer></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="oo_headerWrap sb-slide">
+    <div class="oo_topBarWrap">
+        <div id="oo_js_topBar" class="oo_topBar">
+            <div class="oo_topBar-menuToggle navicon-animated sb-toggle-left"><span></span></div>
+<div style="float:left;width:117px;">
+<a href="http://openorbit.net/" title="Home" target="_blank">
+  <div style="float:left;width: 34px;"><img src="content/img/oo_logo_icon@2x.png" class="oo_topBar-logo"></div>
+<div style="float:right;vertical-align: middle;margin-top: 5px;"><img src="content/img/oo_logo_text.png" class=".oo_topBar-Text">
+  </div>
+</a>
+  </div>
+            <ul class="oo_topBar-nav">
+                <li><script type="text/javascript">
+                    function redirection() {
+                        try {
+                            f_cbload(true, oo.ServerName(), oo.AppKey("BaseRediretion"));
+                        } catch(v_e) {}
+                    }
+                </script><a href="javascript:redirection()" title="Home"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <!--<li class="oo_js_auth_super oo_js_auth_power oo_js_auth_ops oo_js_auth_gov"><a href="javascript:void(0);" title="Projects" id="oo_js_topBar_projects-link"><i class="fa fa-clipboard"></i><span>Projects</span></a>
+                    <div id="oo_js_topBar_projects-popover" class="oo_topBar-popover" style="display: none;">
+                        <ul>
+                            <li>PROJECTS</li>
+                            <li><a href="javascript:void(0)" onclick="goToPage_Header('myProjects.shtml?PlanType=')">My Projects</a></li>
+                            <li><a href="javascript:void(0)" onclick="goToPage_Header('myTeamProjects.shtml?PlanType=')">My Team's Projects</a></li>
+                            <li><a href="javascript:void(0)" onclick="goToPage_Header('myViewPermittedProjects.shtml?PlanType=')">View Permitted Projects</a></li>
+                            <li><a href="javascript:void(0)" onclick="goToPage_Header('myEditPermittedProjects.shtml?PlanType=')">Edit Permitted Projects</a></li>
+                        </ul>
+                        <ul class="oo_js_auth_super">
+                            <li>CUSTOM ADD-ONS</li>
+                            <li><a href="javascript:void(0)" onClick="goToPage_Header('customMetrics.shtml?PlanType=')">Metrics</a></li>
+                            <li><a href="javascript:void(0)" onClick="goToPage_Header('customCauses.shtml?PlanType=')">Causes</a></li>
+                            <li><a href="javascript:void(0)" onClick="goToPage_Header('customSolutions.shtml?PlanType=')">Solutions</a></li>
+                            <li><a href="javascript:void(0)">Templates</a></li>
+                        </ul>
+                        <ul class="oo_js_auth_super">
+                            <li>CUSTOM CHECKLISTS</li>
+                            <li><a href="javascript:void(0)" onClick="goToPage_Header('customChecklists.shtml?PlanType=')">Checklists</a></li>
+                        </ul>
+                        <div class="oo_clear-left"></div>
+                    </div></li>//-->
+                <!--<li><a href="javascript:void(0);" title="Settings" id="oo_js_topBar_settings-link"><i class="fa fa-cog"></i><span>Settings</span></a>
+                    <div id="oo_js_topBar_settings-popover" class="oo_topBar-popover" style="display: none;">
+                        <ul>
+                            <li>SETTINGS <i class="arrow"></i></li>
+                            <li><a href="javascript:void(0)" onclick="logoutPopup('change-username')">Change Username</a></li>
+                            <li><a href="javascript:void(0)" onclick="initPopup('change-password')">Change Password</a></li>
+                            <li><a href="javascript:void(0)" onclick="logoutPopup('change-subscription')" >Change Subscription</a></li>
+                            <li><a href="javascript:void(0)" onclick="initPopup('apply-account')">Apply For Account</a></li>
+                            <li><a href="javascript:void(0)" onclick="initPopup('user-information')">My Profile</a></li>
+                            <li><a href="javascript:void(0)" onclick="initPopup('reset-setting')">Reset Preferences</a></li>
+                        </ul>
+                        <div class="oo_clear-left"></div>
+                    </div></li>//-->
+                <li><a target="_blank" href="http://files.insolitusglobal.com/docuwiki/doku.php?id=knowledge_base" title="Wiki"><i class="fa fa-wikipedia-w"></i><span>Wiki</span></a></li>
+                <!--<li><a target="_blank" href="http://openorbit.discussioncommunity.com/" title="Discussions"><i class="fa fa-group"></i><span>Community</span></a></li>-->
+                <li><a target="_blank" href="http://openorbit.net/support/" title="Help"><i class="fa fa-question"></i><span>Help</span></a></li>
+            </ul>
+            <div class="oo_clear-both"></div>
+            <script type="text/javascript">
+                //<![CDATA[
+                //oo.topMenu.init();
+                //]]>
+            </script>
+        </div>
+    </div>
+</div><!-- end oo_headerWrap -->
+<div id="oo_js_contentWrap" class="oo_contentWrap sb-site-container">
+    <a id="oo_hash-top" name="oo_hash-top"></a>

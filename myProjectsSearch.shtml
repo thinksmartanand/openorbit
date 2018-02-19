@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+    <title>Search Projects</title>
+    <!--#include virtual="head.shtml" -->
+</head>
+<body>
+<!--#include virtual="header.shtml" -->
+<div class="oo_pageIntroWrap">
+    <div class="oo_pageIntro">
+        <ol class="oo_breadcrumb">
+            <li><a href="javascript:void(0);" onclick="goToPage('myProjects.shtml?PlanType=');">Home</a></li>
+            <li><a href="javascript:void(0);" onclick="goToPage('myProjects.shtml?PlanType=');">My Projects</a></li>
+            <li>Search</li>
+        </ol>
+        <div class="oo_loginBar">
+            <script type="text/javascript">
+                try{f_cbload(true, oo.ServerName(), oo.AppKey("WelcomeMessage"));}catch(v_e){console.log(v_e);}
+            </script>
+        </div>
+<!--added by MJ to show apply for account msg -->
+            <div class="hidden_AccountData" style="display:none;">  
+            <script type="text/javascript">
+                
+                     try{f_cbload(true, oo.ServerName(), oo.AppKey("HiddenAccountIframe"));}catch(v_e){console.log(v_e);}
+           </script>
+           </div> 
+           <!-- End -->  
+
+
+
+
+        <div class="oo_clear-both"></div>
+
+        <h1>Search Projects</h1>
+
+        <ul class="oo_toolNav"></ul>
+        <div class="oo_clear-left"></div>
+    </div><!-- end oo_pageIntro -->
+</div><!-- end oo_pageIntroWrap -->
+
+<div class="container">
+
+    <div class="oo_content">
+        <script type="text/javascript">
+            try { f_cbload(true, oo.ServerName(), oo.AppKey("MyProjectsSearch")); } catch (v_e) {; }
+        </script>
+
+        <p id="cxkg"><a href="[@app:1_Search_Conditional_Frame]">Click here</a> to load this Caspio <a href="http://www.caspio.com" title="Online Database">Online Database</a>.</p>
+    </div><!-- end oo_content //-->
+
+
+</div><!-- end container //-->
+
+<!-- Include Apply For Account Popup, Tablet & Mobile navigation function, FancyBox function & JavaScript tab function add -->
+<!--#include virtual="scripts.shtml" -->
+
+</body>
+</html>

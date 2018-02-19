@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+    <title>Project Details</title>
+    <!--#include virtual="head.shtml" -->
+
+</head>
+<body>
+<!--#include virtual="header.shtml" -->
+<div class="oo_pageIntroWrap">
+    <div class="oo_pageIntro">
+        <ol class="oo_breadcrumb">
+           <!-- <li><a href="javascript:void(0);" onclick="goToPage('myProjects.shtml?PlanType=')">Home</a></li>-->
+            <li><a href="javascript:void(0);" onclick="goToPage('myTeamProjects.shtml?PlanType=')">My Teams Projects</a></li>
+            <li>Project Details</li>
+        </ol>
+        <div class="oo_loginBar">
+            <script type="text/javascript">
+                try{f_cbload(true, oo.ServerName(), oo.AppKey("WelcomeMessage"));}catch(v_e){console.log(v_e);}
+            </script>
+        </div>
+        <div class="oo_clear-both"></div>
+
+        <h1 style="display: none;">Project Details</h1>
+
+        <ul class="oo_toolNav">
+            <li class="oo_toolNav_item-refresh"><a href="javascript:void(0);" onclick="goToPage('teamsProjectDetails.shtml?PlanType=');"><i class="fa fa-refresh"></i> Refresh</a></li>
+            <!--<li class="oo_toolNav_item-submitSearch"><a href="javascript:void(0);" onclick="goToPage('submitSearch.shtml?PlanType=');"><i class="fa fa-database"></i> Submit for search</a></li> -->
+        </ul>
+
+        <script type="text/javascript">
+            try { f_cbload(true, oo.ServerName(), oo.AppKey("NameAndStatus_T")); } catch (v_e) {}
+        </script>
+
+    </div><!-- end oo_pageIntro -->
+</div><!-- end oo_pageIntroWrap -->
+
+<div class="container">
+
+    <div id="oo_js_subNav" class="oo_subNav">
+        <ol class="oo_subNav-wizard">
+            <li><p class="oo_subNav-heading">Project Configuration</p>
+                <a href="#oo_js_subContent-1_1"><span>1.</span> Diagnostics</a>
+                <ul>
+                    <li><a href="#oo_js_subContent-1_1">Context</a></li>
+                    <li><a href="#oo_js_subContent-1_2">Metrics</a></li>
+                    <li><a href="#oo_js_subContent-1_3">Causes</a></li>
+                    <li><a href="#oo_js_subContent-1_4">Solutions</a></li>
+                </ul>
+              <!--  <p class="oo_subNav-desc">Please complete your diagnostics before continuing on below</p> -->
+            </li>
+          <!--  <li><a href="#oo_js_subContent-2"><span>2.</span> Collaboration</a></li>-->
+            <li><a href="#oo_js_subContent-2_1"><span>2.</span> Process Model</a>
+                <ul>
+                    <li><a href="#oo_js_subContent-2_1">Processes and Steps</a></li>
+                    <li><a href="#oo_js_subContent-2_2">Worktypes</a></li>
+                </ul></li>
+        
+
+        </ol>
+        <ul class="oo_subNav-extras">
+            <li><p class="oo_subNav-heading">Project Administration</p>
+                <a href="#oo_js_subContent-3_1">Project Tracking</a>
+                <ul>
+                    <li><a href="#oo_js_subContent-3_1">Project Outline</a></li>
+                    <li><a href="#oo_js_subContent-3_2">Stage Tracking</a></li>
+                    <li><a href="#oo_js_subContent-3_3">Project Checklists</a></li>
+                    <li><a href="#oo_js_subContent-3_4">Solution Checklists</a></li>
+                    <li><a href="#oo_js_subContent-3_5">Project Notes</a></li>
+                </ul></li>
+       
+
+
+<li><a href="#oo_js_subContent-4_1">Custom Fields</a>
+                    <!--<i onclick="oo.help.show('customFields');return false;" class="oo_subNav-info"></i>-->
+                    <ul>
+                        <!--<li><a href="#oo_js_subContent-6_1">Custom Reports</a></li>-->
+                        <li><a href="#oo_js_subContent-4_1">Drop down fields</a></li>
+                        <li><a href="#oo_js_subContent-4_2">Free Text Fields</a></li>
+                    </ul></li>
+
+ </ul>
+
+
+
+        <ul class="oo_subNav-extras">
+            <li><p class="oo_subNav-heading">Project Reports</p>
+                <!--<a href="javascript:void(0);" onclick="goToPage('projectStoryBoardReport_T.shtml?PlanType=')">Diagnostic Summary</a>-->
+       
+  <li><a href="#oo_js_subContent-5_2">Data Collection Report</a></li>     
+ <li><a href="#oo_js_subContent-5_1">Baseline Vs. Target</a></li>
+ <li><a href="#oo_js_subContent-5_6">Achieved Vs. Target</a></li>
+ <li><a href="#oo_js_subContent-5_7">Before Vs. After</a></li>
+        
+
+
+         
+           
+      
+
+  
+     
+
+<!--
+            <li><a href="#oo_js_subContent-5_4">Value Stream Maps</a>
+                <i onclick="oo.help.show('vsmReports');return false;" class="oo_subNav-info"></i></li>
+            <li><a href="#oo_js_subContent-5_5">Fishbone Reports</a>
+                <i onclick="oo.help.show('fishboneReports');return false;" class="oo_subNav-info"></i></li>
+-->
+<li><a href="javascript:void(0);" onclick="goToPage('projectStoryBoardReport_T.shtml?PlanType=')">Diagnostic Summary</a></li>
+  <li><a href="#oo_js_subContent-5_3">Custom Reports</a></li>
+                   <!--<i onclick="oo.help.show('customReports');return false;" class="oo_subNav-info"></i>-->
+               
+                    
+         
+                </li>
+    
+    
+
+
+     
+      </ul>
+    </div>
+ 
+
+
+
+    <div id="oo_js_subContent" class="oo_subContent">
+        <div id="oo_js_subContent-1_1">
+            <h2 class="oo_subContent-heading">Diagnostics - Context</h2>
+            <ul class="oo_js_paging-top oo_paging-top">
+                <li class="oo_js_paging-next oo_paging-next"><a class="" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a></li>
+            </ul>
+            <div class="oo_clear-right"></div>
+
+            <div class="oo_subContent-section">
+                <h3>Verticals</h3>
+                <ul class="oo_subContent-navCentered">
+                    <!--<li><a href="javascript:void(0);" onclick="popupWithRefresh('Verticals_add','projecttracking')" class="oo_btn oo_btn-primary">Add New Vertical</a></li>//-->
+                   
+                </ul>
+                <div class="oo_clear-left"></div>
+
+                <iframe class="oo_content-iframe" id="oo_iframe-verticals_T" src="" data-pageKey="Verticals_T" width="100%" height="300px" frameBorder="0" scrolling="no"></iframe>
+            </div>
+
+            <div class="oo_subContent-section">
+                <h3>Horizontals</h3>
+                <ul class="oo_subContent-navCentered">
+                    
+                </ul>
+                <div class="oo_clear-left"></div>
+
+                <iframe class="oo_content-iframe" id="oo_iframe-horizontals_T" src="" data-pageKey="Horizontals_T" height="300px" width="100%" frameBorder="0" scrolling="no"></iframe>
+            </div>
+
+            <div class="oo_subContent-section">
+                <h3>Objectives</h3>
+                <ul class="oo_subContent-navCentered">
+                    
+                </ul>
+                <div class="oo_clear-left"></div>
+
+                <iframe class="oo_content-iframe" id="oo_iframe-objective_T" src="" data-pageKey="Objective_T" width="100%" height="200px" frameBorder="0" scrolling="no"></iframe>
+            </div>
+
+            <div class="oo_clear-both"></div>
+            <ul class="oo_js_paging-bottom oo_paging-bottom">
+                <li class="oo_js_paging-next oo_paging-next"><a class="" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a></li>
+            </ul>
+            <div class="oo_clear-right"></div>
+        </div><!-- end oo_js_subContent-1_1 //-->
+
+        <div id="oo_js_subContent-1_2">
+            <h2 class="oo_subContent-heading">Diagnostics - Metrics</h2>
+            <ul class="oo_js_paging-top oo_paging-top">
+                <li class="oo_js_paging-previous oo_paging-previous"><a class="" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Prev</a></li>
+                <li class="oo_js_paging-next oo_paging-next"><a class="" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a></li>
+            </ul>
+            <div class="oo_clear-right"></div>
+            <div class="oo_subContent-section">
+                <iframe class="oo_content-iframe" id="oo_iframe-projectMetrics_T" src="" data-pageKey="ProjectMetrics_T" width="100%" height="700px" frameBorder="0" scrolling="no"></iframe>
+            </div>
+            <div class="oo_clear-both"></div>
+            <ul class="oo_js_paging-bottom oo_paging-bottom">
+                <li class="oo_js_paging-previous oo_paging-previous"><a class="" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Previous</a></li>
+                <li class="oo_js_paging-next oo_paging-next"><a class="" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a></li>
+            </ul>
+            <div class="oo_clear-both"></div>
+        </div><!-- end oo_js_subContent-1_2 //-->
+
+        <div id="oo_js_subContent-1_3">
+            <h2 class="oo_subContent-heading">Diagnostics - Causes</h2>
+            <ul class="oo_js_paging-top oo_paging-top">
+                <li class="oo_js_paging-previous oo_paging-previous"><a class="" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Prev</a></li>
+                <li class="oo_js_paging-next oo_paging-next"><a class="" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a></li>
+            </ul>
+            <div class="oo_clear-right"></div>
+            <div class="oo_subContent-section">
+                <iframe class="oo_content-iframe" id="oo_iframe-projectCauses_T" src="" data-pageKey="ProjectCauses_T" width="100%" height="700px" frameBorder="0" scrolling="no"></iframe>
+            </div>
+            <div class="oo_clear-both"></div>
+            <ul class="oo_js_paging-bottom oo_paging-bottom">
+                <li class="oo_js_paging-previous oo_paging-previous"><a class="" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Previous</a></li>
+                <li class="oo_js_paging-next oo_paging-next"><a class="" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a></li>
+            </ul>
+            <div class="oo_clear-both"></div>
+        </div><!-- end oo_js_subContent_1_3 //-->
+
+        <div id="oo_js_subContent-1_4">
+            <h2 class="oo_subContent-heading">Diagnostics - Solutions</h2>
+            <ul class="oo_js_paging-top oo_paging-top">
+                <li class="oo_js_paging-previous oo_paging-previous"><a class="" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Prev</a></li>
+                <li class="oo_js_paging-next oo_paging-next"><a class="" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a></li>
+            </ul>
+            <div class="oo_clear-right"></div>
+            <div class="oo_subContent-section">
+                <iframe class="oo_content-iframe" id="oo_iframe-projectSolutions_T" src="" data-pageKey="ProjectSolutions_T" width="100%" height="700px" frameBorder="0" scrolling="no"></iframe>
+            </div>
+            <div class="oo_clear-both"></div>
+            <ul class="oo_js_paging-bottom oo_paging-bottom">
+                <li class="oo_js_paging-previous oo_paging-previous"><a class="" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Previous</a></li>
+                <li class="oo_js_paging-next oo_paging-next"><a class="" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a></li>
+            </ul>
+            <div class="oo_clear-both"></div>
+        </div><!-- end oo_js_subContent_1_4 //-->
+
+      <!--  <div id="oo_js_subContent-2">
+            <h2 class="oo_subContent-heading">Collaboration</h2>
+            <ul class="oo_js_paging-top oo_paging-top">
+                <li class="oo_js_paging-previous oo_paging-previous"><a class="" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Prev</a></li>
+                <li class="oo_js_paging-next oo_paging-next"><a class="" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a></li>
+            </ul>
+            <div class="oo_clear-right"></div>
+            <div class="oo_subContent-section">
+                <iframe class="oo_content-iframe" id="oo_iframe-projectTeam_T" src="" data-pageKey="ProjectTeam_T" width="100%" height="200px" frameBorder="0" scrolling="no"></iframe>
+            </div>
+            <div class="oo_subContent-section">
+                <h3>Team Members</h3>
+                <ul class="oo_subContent-navCentered">
+                    
+                </ul>
+                <div class="oo_clear-left"></div>
+                <iframe class="oo_content-iframe" id="oo_iframe-permissions_T" src="" data-pageKey="Permissions_T" width="100%" height="700px" frameBorder="0" scrolling="no"></iframe>
+            </div>
+            <div class="oo_clear-both"></div>
+            <ul class="oo_js_paging-bottom oo_paging-bottom">
+                <li class="oo_js_paging-previous oo_paging-previous"><a class="" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Previous</a></li>
+                <li class="oo_js_paging-next oo_paging-next"><a class="" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a></li>
+            </ul>
+            <div class="oo_clear-both"></div>
+        </div>--><!-- end oo_js_subContent_2 //-->
+
+        <div id="oo_js_subContent-2_1">
+            <h2 class="oo_subContent-heading">Process Model - Processes and Steps</h2>
+            <ul class="oo_js_paging-top oo_paging-top">
+                <li class="oo_js_paging-previous oo_paging-previous"><a class="" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Prev</a></li>
+                <li class="oo_js_paging-next oo_paging-next"><a class="" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a></li>
+            </ul>
+            <div class="oo_clear-right"></div>
+            <div class="oo_subContent-section">
+                <h3>Processes</h3>
+
+                <div class="oo_clear-left"></div>
+                <iframe class="oo_content-iframe" id="oo_iframe-processes" src="" data-pageKey="Processes_T" width="100%" height="300px" frameBorder="0" scrolling="no"></iframe>
+            </div>
+            <div class="oo_subContent-section">
+                <h3>Steps</h3>
+
+                <div class="oo_clear-left"></div>
+                <iframe class="oo_content-iframe" id="oo_iframe-steps" src="" data-pageKey="Steps_T" width="100%" height="300px" frameBorder="0" scrolling="no"></iframe>
+            </div>
+            <div class="oo_clear-both"></div>
+            <ul class="oo_js_paging-bottom oo_paging-bottom">
+                <li class="oo_js_paging-previous oo_paging-previous"><a class="" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Previous</a></li>
+                <li class="oo_js_paging-next oo_paging-next"><a class="" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a></li>
+            </ul>
+            <div class="oo_clear-both"></div>
+        </div><!-- end oo_js_subContent-2_1 //-->
+
+        <div id="oo_js_subContent-2_2">
+            <h2 class="oo_subContent-heading">Process Model - Worktypes</h2>
+            <ul class="oo_js_paging-top oo_paging-top">
+                <li class="oo_js_paging-previous oo_paging-previous"><a class="" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Prev</a></li>
+                <li class="oo_js_paging-next oo_paging-next"><a class="" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a></li>
+            </ul>
+            <div class="oo_clear-right"></div>
+            <div class="oo_subContent-section">
+                <iframe class="oo_content-iframe" id="oo_iframe-worktypes_T" src="" data-pageKey="Worktypes_T" width="100%" height="300" frameBorder="0" scrolling="no"></iframe>
+            </div>
+            <div class="oo_clear-both"></div>
+            <ul class="oo_js_paging-bottom oo_paging-bottom">
+                <li class="oo_js_paging-previous oo_paging-previous"><a class="" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Previous</a></li>
+                <li class="oo_js_paging-next oo_paging-next"><a class="" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a></li>
+            </ul>
+            <div class="oo_clear-both"></div>
+        </div><!-- end oo_js_subContent-2_2 //-->
+
+    <!--    <div id="oo_js_subContent-4_1">
+            <h2 class="oo_subContent-heading">Performance Analysis - Data Collection Report</h2>
+            <ul class="oo_js_paging-top oo_paging-top">
+                <li class="oo_js_paging-previous oo_paging-previous"><a class="" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Prev</a></li>
+                <li class="oo_js_paging-next oo_paging-next"><a class="" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a></li>
+            </ul>
+            <div class="oo_clear-right"></div>
+            <div class="oo_subContent-section">
+                <iframe class="oo_content-iframe" id="oo_iframe-dataCollection_T" src="" data-pageKey="DataCollection_T" width="100%" height="400" frameBorder="0" scrolling="no"></iframe>
+            </div>
+            <div class="oo_clear-both"></div>
+            <ul class="oo_js_paging-bottom oo_paging-bottom">
+                <li class="oo_js_paging-previous oo_paging-previous"><a class="" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Previous</a></li>
+                <li class="oo_js_paging-next oo_paging-next"><a class="" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a></li>
+            </ul>
+            <div class="oo_clear-both"></div>
+        </div>--><!-- end oo_js_subContent-4_1 //-->
+
+       <!-- <div id="oo_js_subContent-4_2">
+            <h2 class="oo_subContent-heading">Performance Analysis - Performance Gap Report</h2>
+            <ul class="oo_js_paging-top oo_paging-top">
+                <li class="oo_js_paging-previous oo_paging-previous"><a class="" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Prev</a></li>
+                <li class="oo_js_paging-next oo_paging-next"><a class="" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a></li>
+            </ul>
+            <div class="oo_clear-right"></div>
+            <div class="oo_subContent-section">
+                <iframe class="oo_content-iframe" id="oo_iframe-performanceGap_T" src="" data-pageKey="PerformanceGap_T" width="100%" height="400" frameBorder="0" scrolling="no"></iframe>
+            </div>
+            <div class="oo_clear-both"></div>
+            <a class="oo_js_paging-previous oo_subContent_pagingBottom-previous" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Previous</a>
+            <a class="oo_js_paging-next oo_subContent_pagingBottom-next" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a>
+            <div class="oo_clear-both"></div>
+        </div>--><!-- end oo_js_subContent-4_2 //-->
+
+       <!-- <div id="oo_js_subContent-4_3">
+            <h2 class="oo_subContent-heading">Performance Analysis - Historical Performance Report</h2>
+            <ul class="oo_js_paging-top oo_paging-top">
+                <li class="oo_js_paging-previous oo_paging-previous"><a class="" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Prev</a></li>
+                <li class="oo_js_paging-next oo_paging-next"><a class="" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a></li>
+            </ul>
+            <div class="oo_clear-right"></div>
+            <div class="oo_subContent-section">
+                <iframe class="oo_content-iframe" id="oo_iframe-historicalPerformance_T" src="" data-pageKey="HistoricalPerformance_T" width="100%" height="400" frameBorder="0" scrolling="no"></iframe>
+            </div>
+            <div class="oo_clear-both"></div>
+            <ul class="oo_js_paging-bottom oo_paging-bottom">
+                <li class="oo_js_paging-previous oo_paging-previous"><a class="" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Previous</a></li>
+                <li class="oo_js_paging-next oo_paging-next"><a class="" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a></li>
+            </ul>
+            <div class="oo_clear-both"></div>
+        </div>--><!-- end oo_js_subContent-4_3 //-->
+
+
+
+        <!--<div id="oo_js_subContent-5_1">
+            <h2 class="oo_subContent-heading">Solution and Benefits - Solutions Roadmap Report</h2>
+            <a class="oo_js_paging-next oo_subContent_pagingTop-next" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a>
+            <div class="oo_subContent-section">
+                <iframe class="oo_content-iframe" id="oo_iframe-solutionRoadmap_T" src="" data-pageKey="SolutionRoadmap_T" width="100%" height="400" frameBorder="0" scrolling="no"></iframe>
+            </div>
+            <div class="oo_clear-both"></div>
+            <a class="oo_js_paging-previous oo_subContent_pagingBottom-previous" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Previous</a>
+            <a class="oo_js_paging-next oo_subContent_pagingBottom-next" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a>
+            <div class="oo_clear-both"></div>
+        </div>--><!-- end oo_js_subContent-5_1 //-->
+
+       <!-- <div id="oo_js_subContent-5_1">
+            <h2 class="oo_subContent-heading">Solution and Benefits - Benefits Tracking Report</h2>
+            <ul class="oo_js_paging-top oo_paging-top">
+                <li class="oo_js_paging-previous oo_paging-previous"><a class="" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Prev</a></li>
+                 <li class="oo_js_paging-next oo_paging-next"><a class="" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a></li>
+            </ul>
+            <div class="oo_clear-right"></div>
+            <div class="oo_subContent-section">
+                <iframe class="oo_content-iframe" id="oo_iframe-benefitTracking_T" src="" data-pageKey="BenefitTracking_T" width="100%" height="400" frameBorder="0" scrolling="no"></iframe>
+            </div>
+            <ul class="oo_js_paging-bottom oo_paging-bottom">
+                <li class="oo_js_paging-previous oo_paging-previous"><a class="" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Previous</a></li>
+            </ul>
+            <div class="oo_clear-left"></div>
+        </div>--><!-- end oo_js_subContent-5_2 //-->
+
+
+
+<div id="oo_js_subContent-4_1">
+                <h2 class="oo_subContent-heading">Drop down fields</h2>
+                <ul class="oo_js_paging-top oo_paging-top">
+                    <li class="oo_js_paging-previous oo_paging-previous"><a class="" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Prev</a></li>
+<li class="oo_js_paging-next oo_paging-next"><a class="" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a></li>
+                </ul>
+                <div class="oo_clear-right"></div>
+                <div class="oo_subContent-section">
+                    <iframe class="oo_content-iframe" id="oo_iframe-CustomFieldsValues_LOVs_T" src="" data-pageKey="CustomFieldsValues_LOVs_T" width="100%" height="650" frameBorder="0" scrolling="no"></iframe>
+                </div>
+                <div class="oo_clear-both"></div>
+            </div><!-- end oo_js_subContent-6_1 //-->
+
+            <div id="oo_js_subContent-4_2">
+                <h2 class="oo_subContent-heading">Free Text Fields</h2>
+                <ul class="oo_js_paging-top oo_paging-top">
+                    <li class="oo_js_paging-previous oo_paging-previous"><a class="" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Prev</a></li>
+                </ul>
+                <div class="oo_clear-right"></div>
+                <div class="oo_subContent-section">
+                    <iframe class="oo_content-iframe" id="oo_iframe-CustomFieldsValues_Text_T" src="" data-pageKey="CustomFieldsValues_Text_T" width="100%" height="650" frameBorder="0" scrolling="no"></iframe>
+                </div>
+                <div class="oo_clear-both"></div>
+            </div><!-- end oo_js_subContent-4_2 //-->
+ <div class="oo_clear-both"></div>
+
+
+        <div id="oo_js_subContent-3_1">
+            <h2 class="oo_subContent-heading">Project Tracking - Project Outline</h2>
+            <div class="oo_subContent-section">
+                <iframe class="oo_content-iframe" id="oo_iframe-projectManagement_New_T" src="" data-pageKey="ProjectManagement_New_T" width="100%" height="350" frameBorder="0" scrolling="no"></iframe>
+            </div>
+            <div class="oo_clear-both"></div>
+        </div><!-- end oo_js_subContent-3_1 //-->
+
+        <div id="oo_js_subContent-3_2">
+            <h2 class="oo_subContent-heading">Project Tracking - Stage Tracking</h2>
+            <div class="oo_subContent-section">
+                <iframe class="oo_content-iframe" id="oo_iframe-stageTracking_T" src="" data-pageKey="StageTracking_T" width="100%" height="350" frameBorder="0" scrolling="no"></iframe>
+            </div>
+            <div class="oo_clear-both"></div>
+        </div><!-- end oo_js_subContent-3_2 //-->
+
+        <div id="oo_js_subContent-3_3">
+            <h2 class="oo_subContent-heading">Project Tracking - Project Checklists</h2>
+            <div class="oo_subContent-section">
+                <iframe class="oo_content-iframe" id="oo_iframe-projectChecklists_T" src="" data-pageKey="ProjectChecklists_T" width="100%" height="300" frameBorder="0" scrolling="no"></iframe>
+            </div>
+            <div class="oo_clear-both"></div>
+        </div><!-- end oo_js_subContent-3_3 //-->
+
+        <div id="oo_js_subContent-3_4">
+            <h2 class="oo_subContent-heading">Project Tracking - Solution Checklists</h2>
+            <div class="oo_subContent-section">
+                <iframe class="oo_content-iframe" id="oo_iframe-solutionChecklists_T" src="" data-pageKey="SolutionChecklists_T" width="100%" height="300" frameBorder="0" scrolling="no"></iframe>
+            </div>
+            <div class="oo_clear-both"></div>
+        </div><!-- end oo_js_subContent-3_4 //-->
+
+        <div id="oo_js_subContent-3_5">
+            <h2 class="oo_subContent-heading">Project Tracking - Project Notes</h2>
+            <div class="oo_subContent-section">
+                <iframe class="oo_content-iframe" id="oo_iframe-notesAndAttachments_T" src="" data-pageKey="NotesAndAttachments_T" width="100%" height="300" frameBorder="0" scrolling="no"></iframe>
+            </div>
+            <div class="oo_clear-both"></div>
+        </div><!-- end oo_js_subContent-3_5 //-->
+
+        <div id="oo_js_subContent-5_4">
+            <h2 class="oo_subContent-heading">Reports - Value Stream Maps</h2>
+            <div class="oo_subContent-section">
+                <iframe class="oo_content-iframe" id="oo_iframe-processes_vsm" src="" data-pageKey="Processes_T" width="100%" height="300px" frameBorder="0" scrolling="no"></iframe>
+            </div>
+            <div class="oo_clear-both"></div>
+        </div><!-- end oo_js_subContent-5_4 //-->
+
+        <div id="oo_js_subContent-5_5">
+            <h2 class="oo_subContent-heading">Reports - Fishbone Reports</h2>
+            <div class="oo_subContent-section">
+                <iframe class="oo_content-iframe" id="oo_iframe-processes_fishbone" src="" data-pageKey="Processes_T" width="100%" height="300px" frameBorder="0" scrolling="no"></iframe>
+            </div>
+            <div class="oo_clear-both"></div>
+        </div><!-- end oo_js_subContent-5_5 //-->
+
+
+<div id="oo_js_subContent-5_3">
+                <h2 class="oo_subContent-heading">Custom Report</h2>
+                <div class="oo_subContent-section">
+                    <iframe class="oo_content-iframe" id="oo_iframe-CustomReport_OutputT" src="" data-pageKey="CustomReport_OutputT" width="100%" height="300px" frameBorder="0" scrolling="no"></iframe>
+                </div>
+                <div class="oo_clear-both"></div>
+            </div><!-- end oo_js_subContent-5_3 //-->
+
+
+ <div id="oo_js_subContent-5_2">
+            <h2 class="oo_subContent-heading">Performance Analysis - Data Collection Report</h2>
+            <ul class="oo_js_paging-top oo_paging-top">
+                <li class="oo_js_paging-previous oo_paging-previous"><a class="" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Prev</a></li>
+                <li class="oo_js_paging-next oo_paging-next"><a class="" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a></li>
+            </ul>
+            <div class="oo_clear-right"></div>
+            <div class="oo_subContent-section">
+                <iframe class="oo_content-iframe" id="oo_iframe-dataCollection_T" src="" data-pageKey="DataCollection_T" width="100%" height="400" frameBorder="0" scrolling="no"></iframe>
+            </div>
+            <div class="oo_clear-both"></div>
+            <ul class="oo_js_paging-bottom oo_paging-bottom">
+                <li class="oo_js_paging-previous oo_paging-previous"><a class="" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Previous</a></li>
+                <li class="oo_js_paging-next oo_paging-next"><a class="" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a></li>
+            </ul>
+            <div class="oo_clear-both"></div>
+        </div><!-- end oo_js_subContent-5_1 //-->
+
+  <div id="oo_js_subContent-5_1">
+            <h2 class="oo_subContent-heading">Performance Analysis - Baseline Vs. Target</h2>
+            <ul class="oo_js_paging-top oo_paging-top">
+                <li class="oo_js_paging-previous oo_paging-previous"><a class="" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Prev</a></li>
+                <li class="oo_js_paging-next oo_paging-next"><a class="" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a></li>
+            </ul>
+            <div class="oo_clear-right"></div>
+            <div class="oo_subContent-section">
+                <iframe class="oo_content-iframe" id="oo_iframe-performanceGap_T" src="" data-pageKey="PerformanceGap_T" width="100%" height="400" frameBorder="0" scrolling="no"></iframe>
+            </div>
+            <div class="oo_clear-both"></div>
+            <a class="oo_js_paging-previous oo_subContent_pagingBottom-previous" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Previous</a>
+            <a class="oo_js_paging-next oo_subContent_pagingBottom-next" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a>
+            <div class="oo_clear-both"></div>
+        </div><!-- end oo_js_subContent-5_2 //-->
+
+
+<div id="oo_js_subContent-5_6">
+            <h2 class="oo_subContent-heading">Performance Analysis -Achieved Vs. Target</h2>
+            <ul class="oo_js_paging-top oo_paging-top">
+                <li class="oo_js_paging-previous oo_paging-previous"><a class="" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Prev</a></li>
+                <li class="oo_js_paging-next oo_paging-next"><a class="" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a></li>
+            </ul>
+            <div class="oo_clear-right"></div>
+            <div class="oo_subContent-section">
+                <iframe class="oo_content-iframe" id="oo_iframe-BenefitAnalysisReport_T" src="" data-pageKey="BenefitAnalysisReport_T" width="100%" height="400" frameBorder="0" scrolling="no"></iframe>
+            </div>
+            <div class="oo_clear-both"></div>
+            <a class="oo_js_paging-previous oo_subContent_pagingBottom-previous" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Previous</a>
+            <a class="oo_js_paging-next oo_subContent_pagingBottom-next" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a>
+            <div class="oo_clear-both"></div>
+        </div><!-- end oo_js_subContent-5_6 //-->
+
+<div id="oo_js_subContent-5_7">
+            <h2 class="oo_subContent-heading">Performance Analysis - Before Vs. After</h2>
+            <ul class="oo_js_paging-top oo_paging-top">
+                <li class="oo_js_paging-previous oo_paging-previous"><a class="" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Prev</a></li>
+                <li class="oo_js_paging-next oo_paging-next"><a class="" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a></li>
+            </ul>
+            <div class="oo_clear-right"></div>
+            <div class="oo_subContent-section">
+                <iframe class="oo_content-iframe" id="oo_iframe-BeforeVsAfterReport_T" src="" data-pageKey="BeforeVsAfterReport_T" width="100%" height="400" frameBorder="0" scrolling="no"></iframe>
+            </div>
+            <div class="oo_clear-both"></div>
+            <a class="oo_js_paging-previous oo_subContent_pagingBottom-previous" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Previous</a>
+            <a class="oo_js_paging-next oo_subContent_pagingBottom-next" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a>
+            <div class="oo_clear-both"></div>
+        </div><!-- end oo_js_subContent-5_7 //-->
+
+
+
+
+
+
+    </div><!-- end oo_subContent -->
+
+    <div class="oo_clear"></div>
+
+</div><!-- end container -->
+<!--#include virtual="footer.shtml" -->
+
+<!--#include virtual="scripts.shtml" -->
+</body>
+</html>

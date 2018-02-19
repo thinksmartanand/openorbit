@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+    <title>Interactive Value Stream Map</title>
+    <!--#include virtual="head.shtml" -->
+
+</head>
+<body>
+<div class="oo_globalWrap">
+    <div class="oo_module oo_page-reportVSM oo_module_type-report">
+        <div class="oo_module-header">
+            <a href="http://www.openorbit.net" class="oo_logo-full"><img src="content/img/oo_logo-withslogan@2x.png" alt="Open Orbit" title="Open Orbit - Clever meets simple."/></a>
+            <div class="oo_page-ProcessReportsHeader">
+            
+                <script type="text/javascript">
+                    //<![CDATA[
+                    try{f_cbload(true, oo.ServerName(), oo.AppKey("ProcessReportsHeader"));}catch(v_e){console.log(v_e);}
+                    //]]>
+
+
+ 
+                   
+                </script>
+             
+            </div><!-- end oo_page-ProcessReportsHeader //-->
+            <h1>Diagnostic Map</h1>
+            
+            <div style="text-align: right;font-size: large;width: 54%;"> Steps</div>
+
+            <ul class="oo_toolNav">
+               <!-- <li><a href="javascript:void(0);" class="oo_btn oo_btn-misc"><i class="fa fa-angle-left"></i> Back</a></li>-->
+                <!--<li><a href="javascript:void(0);" onclick="oo.common.gotoPage('projectDetails');" class="oo_btn oo_btn-secondary" >Project Details</a></li>-->
+
+                <!--<li><a href="javascript:void(0);" onclick="oo.common.gotoPage('interactivePrintVSM');" class="oo_btn oo_btn-secondary">Diagnostic Map pdf</a></li>-->
+
+                 <!--<li><a href="javascript:void(0);" onclick="oo.common.gotoPage('reportFishbone');" class="oo_btn oo_btn-secondary">Fishbone</a></li>-->
+                
+            </ul>
+
+           
+
+        </div><!-- end oo_module-header //-->
+        <div class="oo_module-content">
+            <iframe src="" id="oo_iframe-interactiveVSMContainer" class="oo_content-iframe" data-pageKey="interactiveVSMContainer" data-pageParams="ProjectID,ProcessID" width="100%" height="1000" scrolling="yes"></iframe>
+        </div><!-- end oo_module-content //-->
+        <div class="oo_module-footer">
+            <p>&copy; 2016 Open Orbit | All rights reserved.</p>
+        </div><!-- end oo_module-footer //-->
+    </div><!-- end oo_module //-->
+</div><!-- end oo_globalWrap //-->
+</body>
+</html>

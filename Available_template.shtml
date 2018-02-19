@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Available Templates Information</title>
+    <!--#include virtual="head.shtml" -->
+</head>
+<body>
+<!--#include virtual="header.shtml" -->
+<div class="oo_pageIntroWrap">
+    <div class="oo_pageIntro">
+        <ol class="oo_breadcrumb">
+            <li><a href="javascript:void(0);" onclick="goToPage('myProjects.shtml?PlanType=')">Home</a></li>
+            <li>Available Templates</li>
+            <!--<li>Templates</li>-->
+        </ol>
+        <div class="oo_loginBar">
+            <script type="text/javascript">
+                try{f_cbload(true, oo.ServerName(), oo.AppKey("WelcomeMessage"));}catch(v_e){console.log(v_e);}
+            </script>
+        </div>
+<!--added by MJ to show apply for account msg -->
+            <div class="hidden_AccountData" style="display:none;">  
+            <script type="text/javascript">
+                
+                     try{f_cbload(true, oo.ServerName(), oo.AppKey("HiddenAccountIframe"));}catch(v_e){console.log(v_e);}
+           </script>
+           </div> 
+           <!-- End -->  
+
+        <div class="oo_clear-both"></div>
+
+        <h1>Template Information</h1>
+
+        <ul class="oo_toolNav">
+        </ul>
+        <div class="oo_clear-both"></div>
+    </div><!-- end oo_pageIntro -->
+</div><!-- end oo_pageIntroWrap -->
+<div class="container">
+
+    <div id="oo_js_subNav" class="oo_subNav">
+        <ul class="oo_subNav-extras">
+            <li><p class="oo_subNav-heading">Custom Add-ons</p>
+                <a href="#oo_js_subContent-1">Available Templates</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="oo_js_subContent" class="oo_subContent">
+        <div id="oo_js_subContent-1">
+            <h2 class="oo_subContent-heading">Template Information</h2>
+
+            <script type="text/javascript">
+                try{f_cbload(true, oo.ServerName(), oo.AppKey("AccountTemplateReport_P"));}catch(v_e){;}
+            </script>
+
+            
+
+
+        </div><!-- end oo_js_subContent-1 //-->
+
+    </div><!-- end oo_subContent -->
+
+    <div class="oo_clear"></div>
+
+          
+
+</div><!-- end container -->
+<!--#include virtual="footer.shtml" -->
+
+<!--#include virtual="scripts.shtml" -->
+</body>
+</html>

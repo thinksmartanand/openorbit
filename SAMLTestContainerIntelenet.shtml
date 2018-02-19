@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAML Test</title>
+
+    <!-- Stylesheets Desktop -->
+    <link rel="stylesheet" href="content/css/oo.website.css" />
+    <link rel="stylesheet" href="content/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="content/css/core-menu.css" />
+    <link rel="stylesheet" href="content/css/charcoal-menu.css" />
+
+    <script src="content/js/jquery.js"></script>
+</head>
+<body>
+
+<div id="hideBread" style="display:none;">
+  <ol class="breadcrumb">         
+        <li><a href="javascript:void(0)">SAML</a></li>  
+        <li class="active">Test</li>
+  </ol>
+</div>
+
+
+FRAME METHOD: <br/>
+      
+      <iframe name="SAMLDirectTest_Intelenet" title="SAMLDirectTest_Intelenet" src="https://c0amf816.caspio.com/dp.asp?AppKey=ef4040001c302cbd71e04a378396">Sorry, but your browser does not support frames.</iframe>
+  
+  <br/>
+  
+EMBED METHOD:
+<br/>
+
+<a href="https://c0amf816.caspio.com/dp.asp?AppKey=ef4040001c302cbd71e04a378396">Click here</a> 
+
+
+<!-- Include Apply For Account Popup, Tablet & Mobile navigation function, FancyBox function & JavaScript tab function add -->
+
+
+</body>
+</html>

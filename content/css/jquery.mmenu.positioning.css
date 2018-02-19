@@ -1,0 +1,34 @@
+nav:not(.mm-menu){display: none;}
+
+.nav-header, .content, .footer{text-align: center;}
+.nav-header{
+	background: url(../img/template/headerBG.jpg) center top repeat-x; 
+	height:96px; text-align:left; border-bottom:5px solid #e8ae43; position:relative;
+	-moz-box-sizing: border-box; box-sizing: border-box; width: 100%; padding:0px 2.5% 0px 4.5%;
+	}
+.nav-header.fixed{position: fixed;	top: 0;	left: 0;}
+.footer.fixed{position: fixed;	bottom: 0;	left: 0;}
+
+.nav-header .mobnav{
+	background: center center no-repeat transparent;
+	background-image: url(../img/ui/mob-nav.png); cursor:pointer;
+	display: block; width: 40px; height:46px; position: absolute; top:10px; left: 20px;
+}
+
+
+/*--- Mobile Search Column ---*/
+.mm-list .linkCol{overflow:hidden;}
+.mm-list .linkCol h5{margin:0 0 0 15px; padding:0px; font-weight:700; font-size:12px; text-transform:uppercase; color:#FFF;}
+.mm-list > li .linkCol ul{padding:10px 0 20px;}
+
+.mm-list > li .linkCol ul li::after{border-bottom-width:0 !important;}
+.mm-list > li .linkCol ul li{padding-bottom:0px;}
+.mm-list > li .linkCol ul li a{padding:5px 15px; position:relative; color:#FFF;}
+.mm-list > li .linkCol ul li a:hover{background:#7087cb;}
+.mm-list > li .linkCol ul li .fa{font-size:14px; right:20px; top:9px; position:absolute;}
+
+
+
+
+
+

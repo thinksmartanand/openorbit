@@ -1,0 +1,199 @@
+/* Open Orbit
+** Shared - Modals
+*/
+
+
+/* Modals inside iframes */
+.Alert, .Window, .Dialog {
+  max-width: 98%!important;
+  border: 1px solid #d7d7d7!important;
+  margin-top: -30px!important;
+  overflow: hidden!important;
+}
+.Alert {
+  left: 1px!important;
+}
+.modal-dialog{width:90%;}
+
+.Dialog .ButtonsCtnr input.SimpleButton,
+.Alert .ButtonsCtnr input.SimpleButton {
+  min-width: 45px!important;
+}
+
+/* Modals */
+.oo_modal {
+  display: block;
+  height: 100%;
+  overflow:hidden;
+  background: #e7e7e7;
+  border: 1px solid #d7d7d7;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.oo_modal h1 {
+  background: #343A6E;
+  color: #fff;
+  margin: 0;
+  padding: 10px 45px;
+  font-size: 1.2em;
+  position: relative;
+  -webkit-border-radius: 2px 2px 0 0;
+  -moz-border-radius: 2px 2px 0 0;
+  border-radius: 2px 2px 0 0;
+  text-align: center;
+}
+.oo_help .oo_modal h1 {
+  background: #c7c7c7;
+}
+.oo_help .oo_modal h1:before {
+  content: 'Help Topic:';
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 300;
+  -moz-opacity: 0.8;
+  -webkit-opacity: 0.8;
+  opacity: 0.8;
+  display: inline-block;
+  padding: 0 10px 0 0;
+}
+.oo_modal-content {
+  display: block;
+  height: 100%;
+  padding: 15px 10px;
+  margin: 0;
+  -webkit-border-radius: 0 0 2px 2px;
+  -moz-border-radius: 0 0 2px 2px;
+  border-radius: 0 0 2px 2px;
+  overflow: auto;
+}
+.oo_help .oo_modal-content {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.oo_help .oo_modal-content > div {
+  display: none;
+
+}
+.oo_help .oo_modal-content > div:first-child {
+  display: block;
+}
+.oo_help .oo_help-back,
+.oo_help .oo_help-more {
+  display: block;
+  float: left;
+  text-align: left;
+  padding: 5px 10px;
+  font-size: 0.8em;
+}
+.oo_help .oo_help-more {
+  float: right;
+}
+
+.oo_modal .oo_content-iframe {
+  min-height: 0!important;
+}
+.oo_modal-table {
+  padding: 0;
+}
+.oo_modal-table table {
+  width: 100%!important
+}
+
+/* test modal wrapper */
+.oo_modal-wrap {
+  display: table;
+  position: fixed;
+  left: -100%;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 999;
+}
+.oo_modal-wrap:before {
+  display: table;
+}
+.oo_modal-wrap_inner {
+  display: table-row;
+  height: 100%;
+}
+.oo_modal-wrap_content {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+}
+.oo_modal-wrap_content:before {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  left: 100%;
+  top: 0;
+  position: absolute;
+  content: "";
+  z-index: 1;
+}
+.oo_modal-wrap .oo_modal {
+  position: relative;
+  left: 100%;
+  height: auto;
+  width: auto;
+  min-height: 200px;
+  max-height: 80% !important;
+  min-width: 200px;
+  max-width: 300px;
+  margin: -10% auto 0!important;
+  z-index: 2;
+  overflow: auto!important;
+}
+.oo_modal-content_wrap {
+  overflow: auto;
+  display: block;
+}
+.oo_modal-close {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  z-index: 2;
+  color: #757b9e;
+  cursor: pointer;
+}
+.oo_help .oo_modal-close {
+  color: #fff;
+  -moz-opacity: 0.4;
+  -webkit-opacity: 0.4;
+  opacity: 0.4;
+}
+.oo_modal-close:hover {
+  color: #fff;
+  background: #232a52;
+}
+.oo_help .oo_modal-close:hover {
+  color: #fff;
+  background: none;
+  -moz-opacity: 1;
+  -webkit-opacity: 1;
+  opacity: 1;
+}
+.oo_modal-close:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  line-height: inherit;
+  content: '\f00d';
+  font-family: FontAwesome;
+  font-size: 16px;
+  vertical-align: middle;
+  text-align: center;
+}

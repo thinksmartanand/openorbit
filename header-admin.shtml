@@ -1,0 +1,49 @@
+<!--#include virtual="slidebar-admin.shtml" -->
+<!--
+<div class="oo_globalWrap">
+    <div class="oo_stickyWrap">-->
+<div id="oo_js_popoverElements">
+    <div class="oo_modal-wrap" id="oo_js_template-modal" style="display: none;">
+        <div class="oo_modal-wrap_inner">
+            <div class="oo_modal-wrap_content">
+                <div class="oo_modal">
+                    <a class="oo_modal-close" title="Close" data-template-close></a>
+                    <h1 class="oo_modal-header" data-template-header></h1>
+                    <div class="oo_modal-content_wrap">
+                        <div class="oo_modal-content" data-template-content></div>
+                    </div>
+                    <div class="oo_modal-footer" data-template-footer></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="oo_headerWrap sb-slide">
+    <div class="oo_topBarWrap">
+        <div class="oo_topBar">
+            <div class="oo_topBar-menuToggle navicon-animated sb-toggle-left"><span></span></div>
+<div style="float:left;">
+<a href="http://openorbit.net/" title="Home" target="_blank">
+  <div style="float:left;width: 34px;"><img src="content/img/oo_logo_icon@2x.png" class="oo_topBar-logo"></div>
+<div style="float:right;vertical-align: middle;margin-top: 5px;"><img src="content/img/oo_logo_text.png" class=".oo_topBar-Text">
+  </div>
+</a>
+  </div>
+            <ul class="oo_topBar-nav">
+                <li><script type="text/javascript">
+                    function redirection() {
+                        try {
+                            f_cbload(true, oo.ServerName(), oo.AppKey("BaseRediretion"));
+                        } catch(v_e) {;}
+                    }
+                </script><a href="javascript:redirection()" title="Home"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a target="_blank" href="http://files.insolitusglobal.com/docuwiki/doku.php?id=knowledge_base" title="Wiki"><i class="fa fa-wikipedia-w"></i><span>Wiki</span></a></li>
+               <!-- <li><a target="_blank" href="http://openorbit.discussioncommunity.com/" title="Discussions"><i class="fa fa-group"></i><span>Community</span></a></li> -->
+                <li><a target="_blank" href="http://openorbit.net/support/" title="Help"><i class="fa fa-question"></i><span>Help</span></a></li>
+            </ul>
+            <div class="oo_clear-both"></div>
+        </div>
+    </div>
+</div><!-- end oo_headerWrap -->
+<div id="oo_js_contentWrap" class="oo_contentWrap sb-site-container">
+

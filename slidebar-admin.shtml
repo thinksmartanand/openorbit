@@ -1,0 +1,59 @@
+<!-- Slidebars -->
+<div class="sb-slidebar sb-left sb-momentum-scrolling sb-style-reveal">
+    <!-- Menu -->
+    <nav class="menu-main-container">
+        <ul id="menu-main" class="slidebar-menu">
+            <li>
+            <span class="linkCol project">
+                <h5>Admin Role</h5>
+                <ul>
+                    <li><a href="all-user.shtml">All Users</a></li>
+                    <li><a href="app-approval.shtml">Manage Users</a></li>
+                  
+                    <li><a href="maintain-teams.shtml">Maintain Teams</a></li>
+                    <li><a href="project-without-team.shtml">Projects Without Teams</a></li>
+                    <li><a href="project-locing-unlocking.shtml">Project Locking and Unlocking</a></li>
+                   <li><a href="ProjectsDownloadReport.shtml">Projects Summary Report</a></li>
+                   <li><a href="ActiveSubscription.shtml">Active Subscriptions</a></li>
+                   <li><a href="UsersWithoutAccount.shtml">Users Without Account</a></li> 
+                </ul>
+            </span>
+            </li>
+<li>
+            <span class="linkCol">
+                <h5>Workflow</h5>
+                <ul>
+                   <li><a href="maintain-role.shtml">Maintain Roles</a></li>
+                    <li><a href="workflowrules.shtml">Workflow Rules</a></li>
+                    <li><a href="maintain-stages.shtml">Maintain Stages</a></li>
+                     <!--<li><a href="UserLogForAdmin.shtml">Audit Log</a></li>-->
+                </ul>
+            </span>
+            </li>
+            <li>
+            <span class="linkCol">
+                <h5>Settings</h5>
+                <ul>
+                    <li><a href="javascript:void(0)" onclick="oo.modal.show('ChangeUsername')">Change Username</a></li>
+                    <li><a href="javascript:void(0)" onclick="oo.modal.show('ChangePassword')">Change Password</a></li>
+                   <!-- <li><a href="javascript:void(0)" onclick="oo.modal.show('ChangeSubscription')">Change Subscription</a></li>
+                    <li><a href="javascript:void(0)" onclick="oo.modal.show('ApplyAccount')">Apply For Account</a></li> -->
+                    <li><a href="javascript:void(0)" onclick="oo.modal.show('DisplayAdminUserInformation')">My Profile</a></li>
+                   <!-- <li><a href="javascript:void(0)" onclick="oo.modal.show('ResetSetting')">Reset Preferences</a></li>-->
+                </ul>
+            </span>
+            </li>
+
+        </ul>
+    </nav>
+</div>
+
+<script>
+
+    jQuery(document).ready(function(){
+
+        initNavigation();
+
+    });
+
+</script>

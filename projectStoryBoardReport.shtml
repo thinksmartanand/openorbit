@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Project Summary</title>
+    <!--#include virtual="head.shtml" -->
+
+</script>
+</head>
+<body>
+<!--#include virtual="header.shtml" -->
+<div class="oo_pageIntroWrap">
+    <div class="oo_pageIntro">
+        <ol class="oo_breadcrumb">
+            <li><a href="javascript:void(0);" onclick="goToPage('myProjects.shtml?PlanType=')">Home</a></li>
+            <li><a href="javascript:void(0);" onclick="goToPage('myProjects.shtml?PlanType=')">My Projects</a></li>
+            <li><a href="javascript:void(0);" onclick="goToPage('projectDetails.shtml?PlanType=')">Project Details</a></li>
+            
+            <li class="active">Project Diagnostic Summary</li>
+        </ol>
+        <div class="oo_loginBar">
+            <script type="text/javascript">
+                try{f_cbload(true, oo.ServerName(), oo.AppKey("WelcomeMessage"));}catch(v_e){console.log(v_e);}
+            </script>
+        </div>
+
+<!--added by MJ to show apply for account msg -->
+            <div class="hidden_AccountData" style="display:none;">  
+            <script type="text/javascript">
+                
+                     try{f_cbload(true, oo.ServerName(), oo.AppKey("HiddenAccountIframe"));}catch(v_e){console.log(v_e);}
+           </script>
+           </div> 
+           <!-- End -->  
+
+
+
+
+
+        <div class="oo_clear-both"></div>
+
+        <h1>Project Diagnostic Summary</h1>
+
+        <ul class="oo_toolNav">
+            <li><a href="javascript:void(0);" onClick="goToPage('projectDetails.shtml?PlanType=')" class="oo_btn oo_btn-secondary">Project Details</a></li>
+
+        </ul>
+        <div class="oo_clear-both"></div>
+    </div><!-- end oo_pageIntro -->
+</div><!-- end oo_pageIntroWrap -->
+<div class="container">
+    <div id="resultdiv" class="oo_content oo_page-projectStoryBoardReport">
+        <div class="oo_content-break">
+            <ul class="oo_nav-centered">
+                <li><a href="javascript:void(0);" class="oo_btn-small oo_btn-hash" onclick="oo.common.scrollTo('#oo_hash-projectSummary');">Project Summary</a></li>
+                <li><a href="javascript:void(0);" class="oo_btn-small oo_btn-hash" onclick="oo.common.scrollTo('#oo_hash-projectVSM');">Diagnostic Data</a></li>
+                <li><a href="javascript:void(0);" class="oo_btn-small oo_btn-hash" onclick="oo.common.scrollTo('#oo_hash-projectCauses');">Project Causes</a></li>
+                <li><a href="javascript:void(0);" class="oo_btn-small oo_btn-hash" onclick="oo.common.scrollTo('#oo_hash-projectSolutions');">Project Solutions</a></li>
+                <li><a href="javascript:void(0);" class="oo_btn-small oo_btn-hash" onclick="oo.common.scrollTo('#oo_hash-SolutionChecklists');">Solution Checklist</a></li>
+                <li><a href="javascript:void(0);" class="oo_btn-small oo_btn-hash" onclick="oo.common.scrollTo('#oo_hash-projectConclusions');">Project Conclusions</a></li>
+            </ul>
+            <div class="oo_clear-left"></div>
+        </div><!-- end oo_content-section //-->
+        <div class="oo_content-section">
+            <a name="oo_hash-projectSummary" id="oo_hash-projectSummary"></a>
+
+            <iframe class="oo_content-iframe" id="oo_iframe-ShowProjectInformation_new" src="" data-pageKey="ShowProjectInformation_new" data-pageParams="ProjectID" width="100%" height="auto" frameBorder="0" scrolling="no"></iframe>
+            <div class="oo_clear-both"></div>
+
+            <div class="oo_content-thirdSection">
+                <iframe class="oo_content-iframe" id="oo_iframe-ShowProjectVerticals" src="" data-pageKey="ShowProjectVerticals" data-pageParams="ProjectID" width="100%" height="auto" frameBorder="0" scrolling="no" style="min-height: 0!important;"></iframe>
+            </div>
+            <div class="oo_content-thirdSection">
+                <iframe class="oo_content-iframe" id="oo_iframe-ShowProjectHorizontals" src="" data-pageKey="ShowProjectHorizontals" data-pageParams="ProjectID" width="100%" height="auto" frameBorder="0" scrolling="no" style="min-height: 0!important;"></iframe>
+            </div>
+            <div class="oo_content-thirdSection">
+                <iframe class="oo_content-iframe" id="oo_iframe-ShowProjectObjective" src="" data-pageKey="ShowProjectObjective" data-pageParams="ProjectID" width="100%" height="auto" frameBorder="0" scrolling="no" style="min-height: 0!important;"></iframe>
+            </div>
+            <div class="oo_clear-left"></div>
+
+
+            <!-- Project VSM //-->
+            <a name="oo_hash-projectVSM" id="oo_hash-projectVSM"></a>
+            <h2>Processes and Steps</h2>
+
+            <iframe class="oo_content-iframe" id="oo_iframe-ShowProcessesAndSteps" src="" data-pageKey="ShowProcessesAndSteps" data-pageParams="ProjectID" width="100%" height="auto" frameBorder="0" scrolling="no"></iframe>
+
+            <h2>Metrics Data</h2>
+            <iframe class="oo_content-iframe" id="oo_iframe-ShowDataValuesAll" src="" data-pageKey="ShowDataValuesAll" data-pageParams="ProjectID" width="100%" height="auto" frameBorder="0" scrolling="no"></iframe>
+
+            <iframe class="oo_content-iframe" id="oo_iframe-AnnotateVSM" src="" data-pageKey="AnnotateVSM" data-pageParams="ProjectID" width="100%" height="300px" frameBorder="0" scrolling="no"></iframe>
+
+            <!-- Project Causes //-->
+            <a name="oo_hash-projectCauses" id="oo_hash-projectCauses"></a>
+            <h2>Causes</h2>
+
+            <iframe class="oo_content-iframe" id="oo_iframe-ShowProjectCauses" src="" data-pageKey="ShowProjectCauses" data-pageParams="ProjectID" width="100%" height="300px" frameBorder="0" scrolling="no"></iframe>
+
+            <iframe class="oo_content-iframe" id="oo_iframe-AnnotateCauses" src="" data-pageKey="AnnotateCauses" data-pageParams="ProjectID" width="100%" height="300px" frameBorder="0" scrolling="no"></iframe>
+
+            <!-- Project Solutions //-->
+            <a name="oo_hash-projectSolutions" id="oo_hash-projectSolutions"></a>
+            <h2>Solutions</h2>
+
+            <iframe class="oo_content-iframe" id="oo_iframe-ShowProjectSolutions" src="" data-pageKey="ShowProjectSolutions" data-pageParams="ProjectID" width="100%" height="300px" frameBorder="0" scrolling="no"></iframe>
+
+            <iframe class="oo_content-iframe" id="oo_iframe-AnnotateSolutions" src="" data-pageKey="AnnotateSolutions" data-pageParams="ProjectID" width="100%" height="300px" frameBorder="0" scrolling="no"></iframe>
+
+            <!-- Project Benefits //-->
+            <a name="oo_hash-SolutionChecklists" id="oo_hash-SolutionChecklists"></a>
+            <h2>Solution Checklist</h2>
+
+            <iframe class="oo_content-iframe" id="oo_iframe-ShowProjectSolutionChecklist" src="" data-pageKey="ShowProjectSolutionChecklist" data-pageParams="ProjectID" width="100%" height="300px" frameBorder="0" scrolling="no"></iframe>
+
+            <iframe class="oo_content-iframe" id="oo_iframe-AnnotateSolutionchecklist" src="" data-pageKey="AnnotateSolutionchecklist" data-pageParams="ProjectID" width="100%" height="300px" frameBorder="0" scrolling="no"></iframe>
+
+            <a name="oo_hash-projectConclusions" id="oo_hash-projectConclusions"></a>
+            <iframe class="oo_content-iframe" id="oo_iframe-AnnotateBenefits" src="" data-pageKey="AnnotateBenefits" data-pageParams="ProjectID" width="100%" height="300px" frameBorder="0" scrolling="no"></iframe>
+        </div><!-- end oo_content-section //-->
+
+    </div><!-- end oo_content //-->
+</div><!-- end container -->
+<!--#include virtual="footer.shtml" -->
+
+
+<!-- Include Apply For Account Popup, Tablet & Mobile navigation function, FancyBox function & JavaScript tab function add -->
+<!--#include virtual="scripts.shtml" -->
+
+</body>
+</html>

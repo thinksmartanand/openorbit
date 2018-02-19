@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Projects</title>
+    <!--#include virtual="head.shtml" -->
+</head>
+<body>
+
+<!--#include virtual="header.shtml" -->
+
+<div id="hideBread" style="display:none;">
+
+</div>
+
+<div class="container sb-site-container">
+
+    <div id="resultdiv" align="center" >
+
+        <script type="text/javascript">
+
+        var currentURL = window.location.href;  
+        var PlanType = location.search.split('PlanType=')[1];
+        var PlanTypeName = PlanType.split('&')[0];
+        var strLastRequestedURL   = "";//need this value
+
+               if(strLastRequestedURL  == "myTeamProjects")
+        	{
+        		window.location = 'https://files.insolitusglobal.com/oo/dev/myTeamProjects.shtml?PlanType='+PlanType 
+
+        	}
+        	else if(PlanType  == "POWER" || PlanType  == "SUPER"){
+    			window.location = 'https://files.insolitusglobal.com/oo/dev/loginNewSam.shtml?PlanType='+PlanType ;
+		}
+         	else if(PlanType == "POWERXX"){
+    			window.location = "https://c0amf816.caspio.com/dp.asp?AppKey=ef404000512d1b770f4f4bb5b057";
+		}
+		 else if(PlanType == "OPS"){
+		   window.location = 'https://files.insolitusglobal.com/oo/dev/myViewPermittedProjects.shtml?PlanType='+PlanType 
+		}
+		else if(PlanType == "GOV"){
+		   window.location = 'https://files.insolitusglobal.com/oo/dev/myTeamProjects.shtml?PlanType='+PlanType 
+		}
+		else{
+		  window.location = 'https://c0amf816.caspio.com/dp.asp?AppKey=ef404000405a1e3037d44e05a444'
+		}
+        </script>
+
+
+
+
+    </div>
+</div>
+
+
+<!-- Include Apply For Account Popup, Tablet & Mobile navigation function, FancyBox function & JavaScript tab function add -->
+<!--#include virtual="scripts.shtml" -->
+
+</body>
+</html>
+

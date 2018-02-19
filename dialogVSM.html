@@ -1,0 +1,13 @@
+﻿
+<div class="modal-header">
+    <h3 class="modal-title" id="modal-title">{{data.title}}</h3>
+</div>
+<div class="modal-body">
+    <div style="width:100%">
+        <iframe class="iframe-display" ng-src={{data.url}} style="width:100%" iframe-onload="iframeLoadedCallBack()"></iframe>
+    </div>
+</div>
+<div class="modal-footer">
+    <!--<button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">OK</button>-->
+    <button class="btn btn-warning" type="button" ng-click="close()">Cancel</button>
+</div>

@@ -1,0 +1,872 @@
+/* Stops the page from resizing when modal opens */
+/* See https://github.com/twbs/bootstrap/issues/9855#issuecomment-34421518 */
+/* and http://jsbin.com/oHiPIJi/edit?html,css,output */
+html {
+  /*overflow: hidden;*/
+  height: 100%;
+}
+
+body {
+  /*overflow: auto;*/
+  height: 100%;
+  width: 100%;
+}
+
+.hidden_iframe {
+  display: none;
+}
+
+.page {
+  /*border:1px solid black;*/
+  background: white;
+  width: 29.7cm;
+  height: 19.5cm;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+  padding: 5px 40px;
+}
+
+@media print {
+  body, .page {
+    width: 29.7cm;
+    height: 20.33cm;
+    margin: 0;
+    box-shadow: 0;
+    background-color: #FF0000;
+    -webkit-print-color-adjust: exact;
+  }
+  .page {
+    padding: 0px 50px;
+  }
+}
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+  }
+}
+
+.modalDisplay {
+  display: block !important;
+}
+
+.modalDialogAddSize {
+  width: 230px !important;
+}
+
+.rootdiv {
+  width: 100%;
+  height: 100%;
+  background: #f7f7f7;
+  /*margin: 0 auto;
+    overflow: auto;*/
+  /*padding: 0 20px 20px;*/
+}
+
+.rootdiv .content-header {
+  background: #e9e9e9;
+}
+
+.rootdiv .content-header .oo_logo-full img {
+  height: 120px;
+  padding: 20px;
+}
+
+.rootdiv .spinner {
+  top: 30% !important;
+}
+
+.rootdiv .image-smallchart {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAAmCAMAAACxivpLAAAAA3NCSVQICAjb4U/gAAAAElBMVEVHcEwThL8AYa4hisK/2umizOJD4qgdAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAABsSURBVFiF7dnBFYBQCMRAQOm/Zd/XFtycsgWQuVPlvu0V3ybc0z3RdXfCHTobD+hmA7rZgG42oJsN6GYDutmAbjagmw3oZgO62YBuNqCbDehmA7rZgG42ALn37xHu3Qr8AybrPoWpO7Cs+008XzkGbSyUpuMAAAAASUVORK5CYII=");
+  background-repeat: repeat-x;
+  height: 40px;
+  cursor: pointer;
+}
+
+.rootdiv .image-chart {
+  /*background-image: url("https://files.insolitusglobal.com/oo/dev/content/vsm/css/oo_chart.png");*/
+  background-image: url("data:image/png;base64,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");
+  background-repeat: repeat-x;
+  height: 70px;
+  cursor: pointer;
+  /*margin: 50px 0px;*/
+}
+
+.rootdiv .image-chart-print {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAAA1CAYAAACNzDMwAAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxMzggNzkuMTU5ODI0LCAyMDE2LzA5LzE0LTAxOjA5OjAxICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+IEmuOgAAAiRJREFUeJzt3btqVEEAxvH/nNsezcbVuIU3RPABBLVJ5XOoXVrfxOcQLFPZ2Qk2Cmm0iBdQA4KJJkqye64zx+IMoqRwlwiHke9XLlt8C/+ds9WsKYpiB1glIHmeAPHQM/4DjqZqaV13aIqiKIHR0JMWFRn4+KPi1e6cCANm6EVhqlrH5TMjbl1cIYqoEqAikBDS2DCrHfc33/Fi+1tfRTT0qkBVHUxSnm/cYP3apEqG3rMMA5St4+XeDM7m4Bw0Fh0LS4oM6SSh2Zvz4XvJOucIKgToD4HzWczXLzMe3LnKxu0r1HU19KxgZFnCm90j7m6+hSRiFPdfouBC+KWxXF8bcfPSGDg19JqAxKxlBlz3x6vhhmAM86b/MGXZDDwmHHnecVDaY09T/dQSQCGIpxAEUAjiKQQBFIJ4CkEAhSCeQhBAIYinEARQCOIpBAEUgngKQQCFIJ5CEEAhiKcQBFAI4ikEARSCeApBAIUgnkIQQCGIpxAEUAjiKQQBFIJ4CkEAhSCeQhBAIYinEARQCOIpBAEUgngKQQCFIJ5CEACSPA/iYnbPME1jYt3B/W+4junpFDAkj7c+Dz1nYUlkOKothe3AqIYTy2OebB+wWzqSe49eDz1nOcbAZNRf0y4nEo8zHj77BE9bEsZpSM+GXmuhdjS2+/t75RjXAbXFGiCLIMtGZmtnP7j/dAKwtuPCasp0JaPrFMSijDGUreX9fvX7oXr4E7l5hBXsiK83AAAAAElFTkSuQmCC");
+  background-repeat: repeat-x;
+  height: 70px;
+}
+
+.rootdiv .content-left {
+  /*margin-top: 40px;*/
+  float: left;
+  width: 15%;
+  font-size: 12px;
+  height: 100%;
+  overflow-y: auto;
+  padding-bottom: 50px;
+  /*border-style: solid;*/
+}
+
+.rootdiv .content-left .step-col {
+  text-align: center;
+}
+
+.rootdiv .content-left .step-col .header {
+  font-size: 20px;
+  margin: 5px;
+}
+
+.rootdiv .content-left .step-col .btn-circle-micro {
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  padding: 1px 0;
+  font-size: 14px;
+  line-height: 0.1;
+  border-radius: 30px;
+  margin: 5px 10px 10px;
+}
+
+.rootdiv .content-left .step-col .btn-circle-sm {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  padding: 2px 0;
+  font-size: 20px;
+  line-height: 1.65;
+  border-radius: 30px;
+  margin: 5px 5px 10px;
+}
+
+.rootdiv .content-left .metrics {
+  text-align: center;
+}
+
+.rootdiv .content-left .metrics .header {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.rootdiv .content-left .metrics .item {
+  margin: 10px;
+  background-color: #ffcc99;
+}
+
+.rootdiv .content-left .metrics .btn-item {
+  background-color: white;
+  margin-left: 30px;
+}
+
+.rootdiv .content-left .causes {
+  text-align: center;
+}
+
+.rootdiv .content-left .causes .header {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.rootdiv .content-left .causes .item {
+  margin: 10px;
+  background-color: #ffcccc;
+}
+
+.rootdiv .content-left .causes .btn-item {
+  background-color: white;
+  margin-left: 30px;
+}
+
+.rootdiv .content-left .solutions {
+  text-align: center;
+}
+
+.rootdiv .content-left .solutions .header {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.rootdiv .content-left .solutions .item {
+  margin: 10px;
+  background-color: #ccccff;
+}
+
+.rootdiv .content-left .solutions .btn-item {
+  background-color: white;
+  margin-left: 30px;
+}
+
+.rootdiv .sticky-header1 {
+  /*height: 40px;*/
+  /*position: fixed;*/
+  /*top: 0px;*/
+  /*width: 15%;*/
+  left: 0px;
+  overflow-y: auto;
+  text-align: center;
+  /*font-size: 24px;*/
+  z-index: 100;
+  /*background-color: #eee;*/
+  float: left;
+}
+
+.rootdiv .sticky-header2 {
+  height: 40px;
+  position: fixed;
+  top: 0px;
+  width: 85%;
+  right: 0px;
+  overflow-y: auto;
+  text-align: center;
+  font-size: 24px;
+  z-index: 100;
+  background-color: #eee;
+}
+
+.rootdiv .content-right {
+  /*margin-top: 40px;*/
+  float: right;
+  width: 100%;
+  border: solid 1px;
+  overflow-x: scroll;
+  /*height: 80%;*/
+}
+
+.rootdiv .content-right .header {
+  text-align: center;
+  font-size: 24px;
+  margin: 10px;
+  /*height:10%;*/
+}
+
+.rootdiv .content-right .no-margin {
+  margin: 0px;
+}
+
+.rootdiv .content-right .no-padding {
+  padding: 0px;
+}
+
+.rootdiv .content-right .step-div1 {
+  height: 90px;
+  width: 250px;
+}
+
+.rootdiv .content-right .step-div2 {
+  height: 90px;
+  width: 500px;
+}
+
+.rootdiv .content-right .step-div3 {
+  height: 90px;
+  width: 750px;
+}
+
+.rootdiv .content-right .table-class {
+  table-layout: fixed;
+  border-collapse: collapse;
+  overflow-x: scroll;
+  border-spacing: 0;
+  padding: 0;
+  border: 0;
+  /*width: 100%;*/
+  /*height: 90%;*/
+}
+
+.rootdiv .content-right .column {
+  width: 250px !important;
+  /*padding: 10px;*/
+  /*border-right-style: dashed;*/
+  vertical-align: top;
+  text-align: center;
+  /*.chevron{
+                padding:5px;
+            }*/
+}
+
+.rootdiv .content-right .column .con-header {
+  padding: 3px 15px;
+}
+
+.rootdiv .content-right .column .con-header .title {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.rootdiv .content-right .column .group {
+  background-color: inherit;
+  border: none;
+}
+
+.rootdiv .content-right .column .group-con {
+  background-color: inherit;
+  border: none;
+}
+
+.rootdiv .content-right .column .group-con .panel-heading {
+  display: none;
+}
+
+.rootdiv .content-right .column .arrow-img {
+  cursor: pointer;
+  height: 16px;
+  margin-top: 3px;
+}
+
+.rootdiv .content-right .column .connection-arr {
+  width: 15px;
+  margin: 0px 3px;
+  cursor: pointer;
+}
+
+.rootdiv .content-right .column .connection-trash {
+  width: 12px;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.rootdiv .content-right .column .connection-flag {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.rootdiv .content-right .column .footer-icon {
+  font-size: 12px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0px 2px;
+  padding: 2px 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.rootdiv .content-right .column .metricconnections {
+  background-color: #ffcc99;
+  margin: 5px 3px 0px;
+  padding: 0px;
+}
+
+.rootdiv .content-right .column .causes {
+  margin: 2px;
+  padding: 0px;
+  background-color: #ffcccc !important;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  font-size: 12px;
+}
+
+.rootdiv .content-right .column .causes .heading {
+  background-color: #ff9999 !important;
+  text-align: center;
+}
+
+.rootdiv .content-right .column .solutions {
+  margin: 2px;
+  padding: 0px;
+  background-color: #ccccff;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  font-size: 12px;
+}
+
+.rootdiv .content-right .column .solutions .heading {
+  background-color: #99ccff !important;
+  text-align: center;
+}
+
+.rootdiv .content-right .column .pagemetric {
+  margin: 2px;
+  padding: 0px;
+  background-color: #ffcc99;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  font-size: 12px;
+}
+
+.rootdiv .content-right .column .pagemetric .heading {
+  background-color: #ff9966;
+  text-align: center;
+}
+
+.rootdiv .content-right .column .pagemetric .heading .title {
+  /*margin-bottom: 5px;
+                        margin-top: 5px*/
+  margin: 0px;
+}
+
+.rootdiv .content-right .column .separator {
+  margin: 0px;
+  border-color: black;
+}
+
+.rootdiv .content-right .column .causeconnections {
+  padding: 0px;
+  background-color: #ffcccc;
+  margin: 5px 3px 0px;
+}
+
+.rootdiv .content-right .column .solutionconnections {
+  padding: 0px;
+  background-color: #ccccff;
+  margin: 5px 3px 0px;
+}
+
+.rootdiv .content-right .column .panel-heading {
+  color: inherit;
+  background-color: inherit;
+  border-color: inherit;
+  text-decoration: none;
+  /*padding-left: 5px;
+                padding-right: 5px;*/
+  padding: 5px;
+}
+
+.rootdiv .content-right .column .panel-body {
+  padding: 5px;
+}
+
+.rootdiv .content-right .column .connection-data {
+  text-align: left;
+}
+
+.rootdiv .content-right .column .connection-data table {
+  font-size: 11px;
+  margin-bottom: 0px;
+}
+
+.rootdiv .content-right .column .connection-data table td {
+  padding: 5px 0;
+}
+
+.rootdiv .content-right .column .icon-style-left {
+  padding-left: 5px;
+}
+
+.rootdiv .content-right .column .icon-style-right {
+  padding-right: 5px;
+}
+
+.rootdiv .content-bottom {
+  /*padding-bottom: 100px;*/
+  /*height: 100%;*/
+  /*drag-n-drop support*/
+  width: 100%;
+  float: right;
+  text-align: center;
+}
+
+.rootdiv .content-bottom .no-margin {
+  margin: 0px;
+}
+
+.rootdiv .content-bottom .no-padding {
+  padding: 0px;
+}
+
+.rootdiv .content-bottom .con-header {
+  margin: 0px;
+  padding: 5px;
+}
+
+.rootdiv .content-bottom .con-header .update-img {
+  padding: 0px 5px;
+  height: 15px;
+  cursor: pointer;
+  float: left;
+}
+
+.rootdiv .content-bottom .con-header .toggle-img {
+  padding-right: 5px;
+  height: 15px;
+  cursor: pointer;
+  float: right;
+}
+
+.rootdiv .content-bottom .con-header .connection-flag {
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+}
+
+.rootdiv .content-bottom .con-header .connection-trash {
+  width: 12px;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.rootdiv .content-bottom .con-header .footer-icon {
+
+  font-size: 12px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0px 2px;
+  padding: 2px 5px;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+
+
+.rootdiv .content-bottom .con-header .metricBase {
+  padding-left: 30px;
+  font-size: 12px;
+}
+
+.rootdiv .content-bottom .con-header .metricTarget {
+  padding: 0px 10px;
+  font-size: 12px;
+}
+
+.rootdiv .content-bottom .group {
+  background-color: inherit;
+  border: none;
+}
+
+.rootdiv .content-bottom .group .panel-heading {
+  display: none;
+}
+
+.rootdiv .content-bottom .drag-panel {
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 90px;
+  background-color: lightgrey;
+}
+
+.rootdiv .content-bottom .panel-heading {
+  color: inherit;
+  background-color: inherit;
+  border-color: inherit;
+  text-decoration: none;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.rootdiv .content-bottom .panel-body {
+  padding: 5px;
+}
+
+.rootdiv .content-bottom .pagemetric {
+  margin: 5px;
+  padding: 0px;
+  background-color: #ffe3c7;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  font-size: 12px;
+}
+
+.rootdiv .content-bottom .pagemetric .heading {
+  background-color: #ffc099;
+  text-align: center;
+}
+
+.rootdiv .content-bottom .pagemetric .heading .title {
+  /*margin-bottom: 5px;
+                        margin-top: 5px*/
+  margin: 0px;
+}
+
+.rootdiv .content-bottom .causes {
+  margin: 5px;
+  padding: 0px;
+  background-color: #ffe3e3;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  font-size: 12px;
+}
+
+.rootdiv .content-bottom .causes .heading {
+  background-color: #ffcccc;
+  text-align: center;
+}
+
+.rootdiv .content-bottom .solutions {
+  margin: 5px;
+  padding: 0px;
+  background-color: #e3e3ff;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  font-size: 12px;
+}
+
+.rootdiv .content-bottom .solutions .heading {
+  background-color: #ccccff;
+  text-align: center;
+}
+
+.rootdiv .content-bottom .separator {
+  margin: 0px;
+  border-color: black;
+}
+
+.rootdiv .content-bottom .metricconnections {
+  padding: 0px;
+  background-color: #ffe3c7;
+  margin: 5px;
+}
+
+.rootdiv .content-bottom .causeconnections {
+  padding: 0px;
+  background-color: #ffe3e3;
+  margin: 5px;
+}
+
+.rootdiv .content-bottom .solutionconnections {
+  padding: 0px;
+  background-color: #e3e3ff;
+  margin: 5px;
+}
+
+.rootdiv .content-bottom .connection-data {
+  text-align: left;
+}
+
+.rootdiv .content-bottom .connection-data table {
+  font-size: 11px;
+  margin-bottom: 0px;
+}
+
+.rootdiv .content-bottom .connection-data table td {
+  padding: 5px 0;
+}
+
+.rootdiv .content-footer {
+  width: 100%;
+  float: right;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.rootdiv .content-footer .notes {
+  text-align: left;
+  border: 1px solid #ccc;
+  padding-top: 10px;
+  background-color: white;
+  padding-left: 5px;
+}
+
+.rootdiv .content-footer .notes pre {
+  border: none;
+  background-color: unset;
+  font-family: inherit;
+}
+
+.rootdiv .content-footer .update-img {
+  padding: 0px 5px;
+  height: 15px;
+  cursor: pointer;
+  float: left;
+}
+
+.pageheader {
+  height: 110px;
+  background: #eff2f7;
+  margin-top: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+.pageheader .imageDiv {
+  width: 10%;
+  display: inline-block;
+  height: 100%;
+  padding: 10px;
+}
+
+.pageheader .imagelogo {
+  height: 90px;
+}
+
+.pageheader .projectDiv {
+  width: 75%;
+  display: inline-block;
+  height: 100%;
+  padding-top: 5px;
+}
+
+.pageheader .title {
+  white-space: nowrap;
+  width: 100%;
+  text-align: left;
+  padding-left: 7px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  padding-bottom: 0px !important;
+}
+
+.pageheader .projectiframe {
+  border: none;
+  width: 100%;
+  height: 90px;
+  overflow-y: hidden;
+}
+
+.pageheader .pageCountDiv {
+  width: 14%;
+  display: inline-block;
+  height: 100%;
+}
+
+.pagefooter {
+  /*position: absolute;
+    bottom:0;*/
+  height: 20px;
+  background: #e7e7e7;
+  padding-right: 20px;
+}
+
+.modal-body {
+  /*width: 300px;
+  height: 500px;*/
+}
+
+.iframe-display {
+  /*width: 500px;*/
+  height: 380px;
+  width: 100%;
+}
+
+.div-hyperlink {
+  cursor: pointer;
+}
+
+.collapse {
+  background-color: #eeeded;
+}
+
+.panel-title {
+  font-size: 14px;
+}
+
+.ui-state-focus {
+  outline: none;
+}
+
+.panel-group {
+  margin-bottom: 0px;
+}
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 130px;
+  background-color: #fff;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -70px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.box {
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+
+.flagbtn {
+  border: none;
+  color: black;
+  /* padding: 10px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+}
+
+.flagbtn.white {
+  background-color: #ffffff;
+  border: 1px solid black;
+  padding: 9px;
+  float: left;
+  margin-left: 5px;
+  width: 23px;
+  height: 23px;
+}
+
+.flagbtn.green {
+  background-color: #4CAF50;
+  /* Green */
+}
+
+.flagbtn.yellow {
+  background-color: yellow;
+}
+
+.flagbtn.red {
+  background-color: #FF0000;
+}

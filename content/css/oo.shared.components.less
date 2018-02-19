@@ -1,0 +1,272 @@
+/* Open Orbit
+** Shared - Components
+*/
+
+/* SubContent */
+.oo_subContent {
+  display: block;
+  padding: 10px;
+  overflow: hidden;
+  background: #e7e7e7;
+  -moz-border-radius: 0 0 2px 2px;
+  -webkit-border-radius: 0 0 2px 2px;
+  border-radius: 0 0 2px 2px;
+}
+.oo_subContent > div {
+  display: none;
+}
+.oo_subContent h2 {
+  padding: 10px 150px 10px 20px;
+  border-bottom: 1px solid #c7c7c7;
+  margin: 0 -10px;
+  font-size: 1.2em;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #454545;
+}
+.oo_content h2 {
+  padding: 10px;
+  border-bottom: 1px solid #c7c7c7;
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #454545;
+}
+.oo_subContent h3 {
+  padding: 10px 10px 15px;
+  font-size: 1.1em;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #454545;
+}
+.oo_content h3 {
+  padding: 10px;
+  font-size: 1.1em;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #454545;
+}
+
+/* Content Section */
+.oo_subContent-section, /* TODO: phase this class out */
+.oo_content-section {
+  display: block;
+  position: relative;
+  padding: 20px;
+  margin: 0 -10px;
+  border-bottom: 1px solid #c7c7c7;
+}
+.oo_subContent-section:last-child, /* TODO: phase this class out */
+.oo_content-section:last-child {
+  border-bottom: none;
+}
+@media screen and (max-width: 720px) {
+  .oo_subContent-section,
+  .oo_content-section {
+    padding: 10px;
+  }
+}
+
+.oo_content-halfSection {
+  display: block;
+  position: relative;
+  padding: 20px 1%;
+  margin: 0;
+  float: left;
+  width: 50%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+}
+.oo_content-halfSection:nth-child(2n-1) {
+  padding-left: 0;
+}
+.oo_content-halfSection:nth-child(2n) {
+  padding-right: 0;
+}
+.oo_content-thirdSection {
+  display: block;
+  position: relative;
+  padding: 20px 1%;
+  margin: 0;
+  float: left;
+  width: 33.333%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+}
+.oo_content-thirdSection:nth-child(3n-2) {
+  padding-left: 0;
+}
+.oo_content-thirdSection:nth-child(3n) {
+  padding-right: 0;
+}
+.oo_content-twoThirdsSection {
+  display: block;
+  position: relative;
+  padding: 20px 1% 20px 0;
+  margin: 0;
+  float: left;
+  width: 66.667%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+}
+.oo_content-twoThirdsSection + .oo_content-thirdSection {
+  padding-right: 0;
+  padding-left: 1%;
+}
+.oo_content-thirdSection + .oo_content-twoThirdsSection {
+  padding-left: 1%;
+}
+
+/* Content break */
+.oo_content-break {
+  padding: 20px 10px 10px;
+  margin: -10px -10px 0;
+  display: block;
+  position: relative;
+  background: #a7a7a7;
+  color: #fff;
+}
+
+/* Content iframes */
+.oo_subContent-iframe, /* TODO: phase this class out */
+.oo_content-iframe {
+  display: block;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: url(../img/loading.gif) no-repeat center 20px;
+}
+
+/* SubContent table */
+.oo_subContent-table, /* TODO: phase this class out */
+.oo_content-table {
+  display: block;
+  margin: 10px 0 0;
+  overflow: auto;
+}
+.oo_subContent-table table, /* TODO: phase this class out */
+.oo_content-table table {
+  width: 100%;
+}
+/* SubContent table */
+.oo_subContent-tableGrouped, /* TODO: phase this class out */
+.oo_content-tableGrouped {
+  padding-bottom: 20px; /* TODO: fix this hack for grouped table iframe height resizing not working.. */
+}
+.oo_subContent-tableGrouped .cbResultSetTable, /* TODO: phase this class out */
+.oo_content-tableGrouped .cbResultSetTable {
+  border: none;
+}
+
+.oo_subContent-subHeading, /* TODO: phase this class out */
+.oo_content-subHeading {
+  display: block;
+  text-align: center;
+  color: #454545;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: 300;
+  border-bottom: 1px solid #c7c7c7;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+/* calendar */
+#CalendarToolBox {
+  width: 210px!important;
+  height: 232px!important;
+  font: normal 1em 'Helvetica Neue', Helvetica, Arial, Sans-serif!important;
+}
+#CalendarToolBox .NavBar {
+  background: #343A6E!important;
+}
+#CalendarToolBox .NavBar td {
+  color: #757b9e!important;
+  line-height: 30px!important;
+  font-size: 0.9em!important;
+  text-transform: uppercase;
+  text-align: center!important;
+  font-weight: normal!important;
+}
+#CalendarToolBox .BodyTable td {
+  width: 14.28%!important;
+  height: 2em!important;
+}
+#CalendarToolBox .BodyTable td.CurrentDate {
+  background: none!important;
+  border-color: #1084bf!important;
+  color: #1084bf!important;
+}
+#CalendarToolBox .BodyTable td:hover {
+  background: #1084bf!important;
+  color: #fff!important;
+  border-color: #1084bf!important;
+}
+#CalendarToolBox .BodyTable td div {
+  display: block;
+  width: auto!important;
+  height: auto!important;
+  line-height: normal!important;
+  text-align: center!important;
+}
+#CalendarToolBox .TodayText {
+  line-height: 30px!important;
+  height: 30px!important;
+}
+#CalendarToolBox .NavBar td:nth-child(2n) {
+  color: #fff!important;
+  width: 30px!important;
+}
+#CalendarToolBox .NavBar td:nth-child(2n):hover {
+  background: #232A52!important;
+}
+#CalendarToolBox .NavBar td:first-child,
+#CalendarToolBox .NavBar td:last-child {
+  display: none;
+}
+#CalendarToolBox .BodyTable td.OtherMonth {
+  color: #949494!important;
+}
+#CalendarToolBox .BodyTable td.OtherMonth:hover {
+  color: #fff!important;
+}
+
+/* Wysiwyg component */
+.cke {
+  display: block;
+  width: 100% !important;
+}
+.cke_chrome {
+  box-shadow: none!important;
+  border: none!important;
+}
+.cke_top,
+.cke_bottom {
+  border-color: #d7d7d7!important;
+  background: #f7f7f7!important;
+  font-weight: normal!important;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif!important;
+}
+.cke_toolgroup,
+a.cke_combo_button {
+  border-color: #c7c7c7!important;
+  background: #f7f7f7!important;
+  -webkit-border-radius: 2px!important;
+  -moz-border-radius: 2px!important;
+  border-radius: 2px!important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+a.cke_path_item,
+span.cke_path_empty {
+  color: #a7a7a7!important;
+  font-weight: normal!important;
+}

@@ -1,0 +1,87 @@
+<!-- Slidebars -->
+<div class="sb-slidebar sb-left sb-momentum-scrolling sb-style-reveal">
+    <!-- Menu -->
+    <nav class="menu-main-container">
+        <ul id="oo_js_slidebarNav" class="slidebar-menu">
+            <li class="super ops gov">
+            <span class="linkCol project">
+                <h5>Project</h5>
+                <ul>
+                    <li class="myprojects" ><a href="" onClick="goToPage_Header('myProjects.shtml?PlanType=')">My Projects</a></li>
+                    
+                    <li class="myteamprojects"><a href="" onClick="goToPage_Header('myTeamProjects.shtml?PlanType=')">My Team's Projects</a></li>
+                    <li class="myteamprojects"><a href="" onClick="goToPage_Header('myPendingApprovals.shtml?PlanType=')">My Pending Approvals</a></li>
+
+                    <li class="Available_template"><a href="" onClick="goToPage_Header('Available_template.shtml?PlanType=')">Available Templates</a></li>
+                            
+                    </ul>
+            </span>
+            </li>
+
+                     <li class="power">
+                     <span class="linkCol">
+                     <h5>Project</h5>
+                      <ul>
+                    
+                      <li class="myprojects" ><a href="" onClick="goToPage_Header('myProjects.shtml?PlanType=')">My Projects</a></li>
+                    
+                    <li class="myteamprojects"><a href="" onClick="goToPage_Header('myTeamProjects.shtml?PlanType=')">My Team's Projects</a></li>
+
+
+                    <li class="myteamprojects"><a href="" onClick="goToPage_Header('myPendingApprovals.shtml?PlanType=')">My Pending Approvals</a></li>
+
+                     
+                     <li class="Available_template"><a href="" onClick="goToPage_Header('Available_template.shtml?PlanType=')">Available Templates</a></li>
+                     
+                            
+                       
+
+
+<!-- <li class="myteamprojects"><a href="" onClick="goToPage_Header('AssignProjectRoles.shtml?PlanType=')">Assign Project Roles</a></li>-->
+                   <!-- <li><a href="" onClick="goToPage_Header('myViewPermittedProjects.shtml?PlanType=')">View Permitted Projects</a></li>-->
+                   <!-- <li class="editpermitted" ><a href="" onClick="goToPage_Header('myEditPermittedProjects.shtml?PlanType=')">Edit Permitted Projects</a></li>-->
+                </ul>
+            </span>
+            </li>
+            <!--<li>
+                <span class="linkCol">
+                    <h5>Reports</h5>
+                    <ul>
+                        <li><a href="report-dc.shtml">Data Collection <i class="fa fa-external-link"></i></a></li>
+                        <li><a href="report-performance.shtml">Performance Gaps <i class="fa fa-external-link"></i></a></li>
+                        <li><a href="report-solutionroadmap.shtml">Solution Roadmap <i class="fa fa-external-link"></i></a></li>
+                        <li><a href="report-Improvementtracker.shtml">Benefits Tracking <i class="fa fa-external-link"></i></a></li>
+                    </ul>
+                </span>
+            </li>-->
+            <li class="super" >
+            <span class="linkCol">
+                <h5>Custom Extensions</h5>
+                <ul>
+                    <li class = "custom-metrics" ><a href="" onClick="goToPage_Header('customChecklists.shtml?PlanType=')">Checklists</a></li>  
+<li class = "custom-metrics" ><a href="" onClick="goToPage_Header('customReports.shtml?PlanType=')">Reports</a></li>  
+<li class = "custom-metrics" ><a href="" onClick="goToPage_Header('customMetrics.shtml?PlanType=')">Metrics</a></li>
+                    <li class = "custom-causes" ><a href="" onClick="goToPage_Header('customCauses.shtml?PlanType=')">Causes</a></li>
+                    <li class = "custom-solutions" ><a href="" onClick="goToPage_Header('customSolutions.shtml?PlanType=')">Solutions</a></li>
+                   <li class = "Account_Template" ><a href="" onClick="goToPage_Header('Account_Template.shtml?PlanType=')">Templates</a></li>
+                </ul>
+            </span>
+            </li>
+
+
+            <li class="power super ops gov">
+            <span class="linkCol">
+                <h5>Settings</h5>
+                <ul>
+                    <li><a href="javascript:void(0)" onclick="oo.modal.show('ChangeUsername')">Change Username</a></li>
+                    <li><a href="javascript:void(0)" onclick="oo.modal.show('ChangePassword')">Change Password</a></li>
+                  <!-- <li><a href="javascript:void(0)" onclick="oo.modal.show('ChangeSubscription')">Change Subscription</a></li>-->
+                    <li><a href="javascript:void(0)" onclick="oo.modal.show('ApplyAccount')">Apply For Account</a></li>
+                    <li><a href="javascript:void(0)" onclick="oo.modal.show('DisplayUserInformation')">My Profile</a></li>
+                   <!-- <li><a href="javascript:void(0)" onclick="oo.modal.show('ResetSetting')">Reset Preferences</a></li>-->
+                </ul>
+            </span>
+            </li>
+        </ul>
+    </nav>
+</div>

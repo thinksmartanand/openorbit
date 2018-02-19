@@ -1,0 +1,278 @@
+/* Open Orbit
+** Shared - Buttons
+*/
+
+/* layouts for buttons */
+
+/* centered layout */
+.oo_subContent-navCentered,
+.oo_nav-centered {
+  clear: left;
+  display: block;
+  float: left;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-align: center;
+}
+.oo_subContent-navCentered li,
+.oo_nav-centered li {
+  display: block;
+  float: left;
+  list-style: none;
+  margin: 0 1px 10px;
+  padding: 0;
+  position: relative;
+  right: 50%;
+}
+.oo_subContent-navCentered li a,
+.oo_nav-centered li a {
+  display: block;
+}
+.oo_subContent-navCentered li a:hover,
+.oo_nav-centered li a:hover {
+}
+/* left layout */
+.oo_subContent-nav,
+.oo_nav-left {
+  display: block;
+  position: relative;
+  margin: 0 10px 10px 10px;
+  padding: 0;
+}
+.oo_subContent-nav li,
+.oo_nav-left li {
+  display: block;
+  float: left;
+  list-style: none;
+  margin: 0 1px;
+  padding: 0;
+}
+.oo_subContent-nav li a,
+.oo_nav-left li a {
+  display: block;
+}
+.oo_subContent-nav li a:hover,
+.oo_nav-left li a:hover {
+}
+/* right layout */
+.oo_nav-right {
+  display: block;
+  position: relative;
+  float: right;
+  margin: 0 10px 10px 10px;
+  padding: 0;
+}
+.oo_nav-right li {
+  display: block;
+  float: left;
+  list-style: none;
+  margin: 0 1px;
+  padding: 0;
+}
+.oo_nav-right li a {
+  display: block;
+}
+.oo_nav-right li a:hover {
+}
+/* end layouts for buttons */
+
+
+/* base button styles */
+.oo_btn,
+.oo_btn-small,
+.oo_btnIcon,
+.oo_btnIcon-small,
+.oo_btn-multiline,
+.oo_btn-multiline_small{
+  display: inline-block;
+  padding: 0 10px;
+  text-decoration: none;
+  border: 1px solid #d7d7d7;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  color: #b7b7b7;
+  background: none;
+  height: 30px;
+  line-height: 30px;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.oo_btnIcon {
+  position: relative;
+  padding-left: 35px;
+}
+.oo_btn-multiline {
+  height: 50px;
+  line-height: 25px;
+}
+.oo_btn-small,
+.oo_btn-multiline_small,
+.oo_subContent-table td .oo_btn,
+.oo_subContent-table td .oo_btnIcon,
+.oo_content-table td .oo_btn,
+.oo_content-table td .oo_btnIcon {
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: middle;
+  font-size: 0.9em;
+  height: 25px;
+  line-height: 25px;
+}
+.oo_btn-multiline_small {
+  height: 40px;
+  line-height: 20px;
+}
+.oo_btnIcon-small,
+.oo_subContent-table td .oo_btnIcon,
+.oo_content-table td .oo_btnIcon {
+  padding-left: 15px;
+}
+.oo_btn:hover,
+.oo_btn-small:hover,
+.oo_btnIcon:hover,
+.oo_btnIcon-small:hover,
+.oo_btn-multiline:hover,
+.oo_btn-multiline_small:hover {
+  text-decoration: none;
+}
+.oo_btn:focus,
+.oo_btn-small:focus,
+.oo_btnIcon:focus,
+.oo_btnIcon-small:focus,
+.oo_btn-multiline:focus,
+.oo_btn-multiline_small:focus {
+  border-width: 1px;
+  border-style: solid;
+}
+/* end button base styles */
+
+/* button theme styles */
+/* primary theme */
+.oo_btn-primary {
+  border: 1px solid #1084bf;
+  background: #1084bf;
+  color: #fff;
+}
+.oo_toolNav li a.oo_btn-primary,
+.oo_subContent-table tr:hover td .oo_btn-primary,
+.oo_content-table tr:hover td .oo_btn-primary {
+  border: 1px solid #1084bf;
+  background: #1084bf;
+  color: #fff;
+}
+.oo_toolNav li a.oo_btn-primary:hover,
+.oo_btn-primary:hover,
+.oo_btn-primary.oo_active,
+.oo_active > .oo_btn-primary {
+  border-color: #279dd9!important;
+  background: #279dd9!important;
+  color: #fff!important;
+}
+/* secondary theme */
+.oo_btn-secondary {
+  border: 1px solid #1084bf;
+  background: none;
+  color: #1084bf;
+}
+.oo_toolNav li a.oo_btn-secondary,
+.oo_subContent-table tr:hover td .oo_btn-secondary,
+.oo_content-table tr:hover td .oo_btn-secondary {
+  background: #1084bf;
+  border-color: #1084bf;
+  color: #fff;
+}
+.oo_toolNav li a.oo_btn-secondary:hover,
+.oo_btn-secondary:hover,
+.oo_btn-secondary.oo_active,
+.oo_active > .oo_btn-secondary {
+  border-color: #279dd9!important;
+  background: #279dd9!important;
+  color: #fff!important;
+}
+
+/* miscellaneous theme */
+.oo_btn-misc {
+  border: 1px solid #d7d7d7;
+  color: #b7b7b7;
+  background: none;
+}
+.oo_subContent-table tr:hover td .oo_btn-misc,
+.oo_content-table tr:hover td .oo_btn-misc {
+  border-color: #1084bf;
+  background: none;
+  color: #1084bf;
+}
+.oo_btn-misc:hover,
+.oo_btn-misc.oo_active,
+.oo_active > .oo_btn-misc {
+  border-color: #279dd9;
+  background: none;
+  color: #279dd9;
+}
+
+.oo_btn-oo {
+  background: #343a6e;
+  border-color: #343a6e;
+  color: #fff;
+}
+.oo_btnIcon.oo_btn-oo:before {
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 7px;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: url(../img/oo_logo_icon@2x.png) no-repeat 0 0;
+  -moz-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+.oo_subContent-table td a.oo_btnIcon.oo_btn-oo:before,
+.oo_content-table td a.oo_btnIcon.oo_btn-oo:before {
+  top: 2px;
+}
+.oo_btn-oo:hover {
+  background: #232A52!important;
+  color: #fff!important;
+  border-color: #232A52!important;
+}
+
+/* hash themed buttons */
+.oo_btn-hash {
+  border: 1px solid #fff;
+  background: none;
+  color: #fff;
+}
+.oo_btn-hash:hover {
+  border-color: #279dd9!important;
+  background: #279dd9!important;
+  color: #fff!important;
+}
+
+/* end button themes */
+
+
+/* full buttons */
+.oo_btn-refresh {
+  line-height: 30px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  white-space: nowrap;
+}
+
+/*  Old button styles
+    TODO: To be phased out and replaced by styles above.
+*/
+.btn:focus, .btn:active:focus, .btn.active:focus {
+  outline: none;
+  outline-offset:0;
+  outline: 0 auto -webkit-focus-ring-color;
+}

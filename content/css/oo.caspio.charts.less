@@ -1,0 +1,204 @@
+@import (reference) "oo.shared.resources.less";
+
+/* Open Orbit
+** Caspio - Charts
+*/
+
+/* VSM Charts */
+.oo_chart_vsm {
+  display: block;
+  width: 100%;
+  overflow: auto;
+
+}
+.oo_chart_vsm-wait,
+.oo_chart_vsm-step {
+  position: relative;
+  display: block;
+  float: left;
+  min-width: 100px;
+  width: 120px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 0.9em;
+}
+.oo_chart_vsm-step:before,
+.oo_chart_vsm-wait:before {
+  content: '';
+  display: block;
+  border: 3px solid @palette-blue1;
+  border-bottom: none;
+  height: 60px;
+  width: 100%;
+  -moz-border-radius: 2px 2px 0 0;
+  -webkit-border-radius: 2px 2px 0 0;
+  border-radius: 2px 2px 0 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.oo_chart_vsm-wait:before {
+  height: 0;
+  margin-top: 57px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+.oo_chart_vsm-label {
+  font-weight: bold;
+  display: block;
+  margin: 20px 0 10px -45%;
+  width: 190%;
+  text-align: center;
+  min-height: 2.7em;
+
+}
+.oo_chart_vsm-all .oo_chart_vsm-label {
+  display: none;
+}
+
+.oo_chart_vsm-step table,
+.oo_chart_vsm-all table {
+  font-size: 0.9em;
+  border: none;
+  padding: 0;
+  margin: 0 0 5px -45%;
+  background: #e7e7e7;
+  width: 190%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.oo_chart_vsm-all table {
+  margin-left: 0;
+  width: 100%;
+}
+.oo_chart_vsm-step table tr,
+.oo_chart_vsm-all table tr {
+  position: relative;
+}
+.oo_chart_vsm-step table th,
+.oo_chart_vsm-step table td,
+.oo_chart_vsm-all table th,
+.oo_chart_vsm-all table td {
+  padding: 5px;
+  margin: 0;
+  text-align: left;
+  font: normal 1em 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+}
+
+.oo_chart_vsm-step table th,
+.oo_chart_vsm-all table th {
+  background: #ddd;
+  font-weight: bold;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.oo_chart_vsm-all table th {
+  text-align: right;
+  padding-right: 10px;
+}
+.oo_chart_vsm-step .oo_chart_vsm-metrics tr:first-child th,
+.oo_chart_vsm-all .oo_chart_vsm-metrics tr:first-child th {
+  background: #5a79ba;
+  color: #fff;
+  text-align: center;
+  font-weight: normal;
+}
+.oo_chart_vsm-step .oo_chart_vsm-causes th,
+.oo_chart_vsm-all .oo_chart_vsm-causes th {
+  background: #8a8163;
+  color: #fff;
+  text-align: center;
+  font-weight: normal;
+}
+.oo_chart_vsm-step .oo_chart_vsm-solutions th,
+.oo_chart_vsm-all .oo_chart_vsm-solutions th {
+  background: #71a7db;
+  color: #fff;
+  text-align: center;
+  font-weight: normal;
+}
+
+.oo_chart_vsm-step table tr td:last-child {
+  text-align: left;
+  width: 20px;
+}
+.oo_chart_vsm-all table td {
+  text-align: center;
+  padding-left: 25%;
+}
+.oo_chart_vsm-all table tr td:last-child {
+  text-align: left;
+  width: 25%;
+  padding-left: 5px;
+}
+.oo_chart_vsm-step .oo_chart_vsm-metrics td {
+  white-space: nowrap;
+  text-align: left;
+}
+.oo_chart_vsm-all .oo_chart_vsm-metrics td {
+  white-space: nowrap;
+  text-align: left;
+  width: 25%;
+  padding-left: 5px;
+}
+
+.oo_chart_vsm-step table th .fa,
+.oo_chart_vsm-step table td .fa,
+.oo_chart_vsm-all table th .fa,
+.oo_chart_vsm-all table td .fa {
+  display: none;
+  padding-right: 5px;
+}
+/*
+.oo_chart_vsm-step table tr.oo_chart_vsm-priority_low .fa,
+.oo_chart_vsm-all table tr.oo_chart_vsm-priority_low .fa {
+  display: inline-block;
+  color: @color-priority-low;
+}
+.oo_chart_vsm-step table tr.oo_chart_vsm-priority_medium .fa,
+.oo_chart_vsm-all table tr.oo_chart_vsm-priority_medium .fa {
+  display: inline-block;
+  color: @color-priority-medium;
+}
+.oo_chart_vsm-step table tr.oo_chart_vsm-priority_high .fa,
+.oo_chart_vsm-all table tr.oo_chart_vsm-priority_high .fa {
+  display: inline-block;
+  color: @color-priority-high;
+}
+*/
+.oo_chart_vsm-step table tr.oo_chart_vsm-priority_low td:last-child:before,
+.oo_chart_vsm-all table tr.oo_chart_vsm-priority_low td:last-child:before {
+  font-family: FontAwesome;
+  display: inline-block;
+  content: '\f024';
+  color: @color-priority-low;
+}
+.oo_chart_vsm-step table tr.oo_chart_vsm-priority_medium td:last-child:before,
+.oo_chart_vsm-all table tr.oo_chart_vsm-priority_medium td:last-child:before {
+  font-family: FontAwesome;
+  display: inline-block;
+  content: '\f024';
+  color: @color-priority-medium;
+}
+.oo_chart_vsm-step table tr.oo_chart_vsm-priority_high td:last-child:before,
+.oo_chart_vsm-all table tr.oo_chart_vsm-priority_high td:last-child:before {
+  font-family: FontAwesome;
+  display: inline-block;
+  content: '\f024';
+  color: @color-priority-high;
+}
+
+/* Fishbone chart */
+
+#oo_chart_fishbone {
+  /* necessary for displaying fontawesome within the canvas */
+  font-family: FontAwesome;
+  font-weight: 300;
+}

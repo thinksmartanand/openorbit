@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+    <title>My Teams Projects</title>
+    <!--#include virtual="head.shtml" -->
+</head>
+<body>
+<!--#include virtual="header.shtml" -->
+<div class="oo_pageIntroWrap">
+    <div class="oo_pageIntro">
+        <ol class="oo_breadcrumb">
+            <li><a href="javascript:void(0)" onClick="goToPage('Home')" >Home</a></li>
+          <li><a href="javascript:void(0)" onClick="goToPage('myTeamProjects.shtml?PlanType=')">Team's Projects</a></li>
+            <li> Audit Log Report</li>
+         
+        </ol>
+        <div class="oo_loginBar">
+            <script type="text/javascript">
+ 
+                try{f_cbload(true, oo.ServerName(), oo.AppKey("WelcomeMessage"));}catch(v_e){console.log(v_e);}
+            </script>
+        </div>
+ <!--added by MJ to show apply for account msg -->
+            <div class="hidden_AccountData" style="display:none;">  
+            <script type="text/javascript">
+                
+                     try{f_cbload(true, oo.ServerName(), oo.AppKey("HiddenAccountIframe"));}catch(v_e){console.log(v_e);}
+           </script>
+           </div> 
+           <!-- End -->  
+        <div class="oo_clear-both"></div>
+
+        <h1>Audit Log Report</h1>
+
+        <ul class="oo_toolNav">
+            <li><a onClick="goToPage('myTeamProjects.shtml?PlanType=')" class="oo_btn oo_btn-secondary">Team's Project List</a></li>
+        </ul>
+             
+        <div class="oo_clear-both"></div>
+    </div><!-- end oo_pageIntro -->
+</div><!-- end oo_pageIntroWrap -->
+<div class="container">
+
+    <div id="oo_js_subNav" class="oo_subNav">
+        <!--<ul class="oo_subNav-projects">
+            <li><p class="oo_subNav-heading">Projects</p>
+                <a href="#oo_js_subContent-1">My Team's Projects</a>
+            </li>
+        </ul>-->
+        <ul class="oo_subNav-reports">
+            <li><p class="oo_subNav-heading">Reports</p>
+                <a href="javascript:void(0);" onClick="goToPage('projectDateTracking.shtml?PlanType=')">Project Date Tracking</a>
+            </li>
+            <!--<li><a href="javascript:void(0);" onClick="goToPage('CostandBenefitReport.shtml?PlanType=')">Projects Without Costs or Benefits</a></li>
+            <li><a href="javascript:void(0);" onClick="goToPage('teamProjectBetween.shtml?PlanType=')">Projects With Actions Due Soon</a></li>
+            <li><a href="javascript:void(0);" onClick="goToPage('teamsWithoutVoC.shtml?PlanType=')">Projects Completed Without VOC</a></li>//-->
+            <li><a href="javascript:void(0);" onClick="goToPage('reviewCommentSummary.shtml?PlanType=')">Review Comment Summary</a></li>
+            <li><a href="javascript:void(0);" onClick="goToPage('costBenefitAndVoC.shtml?PlanType=')">Projects Cost, Benefit, VOC</a></li>
+            <li><a href="javascript:void(0);" onClick="goToPage('projectActionItemReport.shtml?PlanType=')">Projects Action Item Report</a></li>
+            <li><a href="javascript:void(0);" onClick="goToPage('solutionActionItemReport.shtml?PlanType=')">Solution Action Item Report</a></li>
+            <li><a href="javascript:void(0);" onClick="goToPage('AuditLog.shtml?PlanType=')">Audit Log</a></li>
+        </ul>
+    </div>
+
+    <div id="oo_js_subContent" class="oo_subContent">
+        <div id="oo_js_subContent-1">
+
+            <div class="oo_subContent-section">
+                <iframe class="oo_content-iframe" id="oo_iframe-AuditLogForAllTeamProjects" src="" data-pageKey="AuditLogForAllTeamProjects" width="100%" height="700" frameBorder="0" scrolling="no"></iframe>
+            </div>
+
+        </div><!-- end oo_js_subContent-1 //-->
+    </div><!-- end oo_subContent -->
+
+</div><!-- end container -->
+<!--#include virtual="footer.shtml" -->
+
+<!--#include virtual="scripts.shtml" -->
+
+</body>
+</html>

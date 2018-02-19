@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Project Summary</title>
+    <!--#include virtual="head.shtml" -->
+</head>
+<body>
+<!--#include virtual="header.shtml" -->
+<div class="oo_pageIntroWrap">
+    <div class="oo_pageIntro">
+        <ol class="oo_breadcrumb">
+            <li><a href="javascript:void(0);" onclick="goToPage('myProjects.shtml?PlanType=')">Home</a></li>
+            <li><a href="javascript:void(0);" onclick="goToPage('myProjects.shtml?PlanType=')">My Projects</a></li>
+            <li><a href="javascript:void(0);" onclick="goToPage('projectDetails.shtml?PlanType=')">Project Details</a></li>
+            <li class="active">Project Diagnostic Summary</li>
+        </ol>
+        <div class="oo_loginBar">
+            <script type="text/javascript">
+                try{f_cbload(true, oo.ServerName(), oo.AppKey("WelcomeMessage"));}catch(v_e){console.log(v_e);}
+            </script>
+        </div>
+
+<!--added by MJ to show apply for account msg -->
+            <div class="hidden_AccountData" style="display:none;">  
+            <script type="text/javascript">
+                
+                     try{f_cbload(true, oo.ServerName(), oo.AppKey("HiddenAccountIframe"));}catch(v_e){console.log(v_e);}
+           </script>
+           </div> 
+           <!-- End -->  
+
+
+        <div class="oo_clear-both"></div>
+
+        <h1>Project Diagnostic Summary</h1>
+
+        <ul class="oo_toolNav">
+            <li><a href="javascript:void(0);" onClick="goToPage('projectDetails.shtml?PlanType=')" class="oo_btn oo_btn-secondary">Project Details</a></li>
+        </ul>
+        <div class="oo_clear-both"></div>
+    </div><!-- end oo_pageIntro -->
+</div><!-- end oo_pageIntroWrap -->
+<div class="container">
+    <div id="resultdiv" class="oo_content oo_page-projectStoryBoardReport">
+        <div class="oo_content-break">
+           
+            <div class="oo_clear-left"></div>
+        </div><!-- end oo_content-section //-->
+        <div class="oo_content-section">
+            <a name="oo_hash-projectSummary" id="oo_hash-projectSummary"></a>
+
+            <iframe class="oo_content-iframe" id="oo_iframe-ShowProjectInformation_new" src="" data-pageKey="CustomHeader" data-pageParams="ProjectID" width="100%" height="10" frameBorder="0" scrolling="no"></iframe>
+ <div class="oo_clear-both"></div>
+<iframe class="oo_content-iframe" id="oo_iframe-ShowProjectInformation_new" src="" data-pageKey="ProjectCustomReport" data-pageParams="ProjectID" width="100%" height="450" frameBorder="0" scrolling="no"></iframe>
+ <div class="oo_clear-both"></div>
+<iframe class="oo_content-iframe" id="oo_iframe-ShowProjectInformation_new" src="" data-pageKey="MilestoneStages" data-pageParams="ProjectID" width="100%" height="auto" frameBorder="0" scrolling="no"></iframe>
+
+
+            <div class="oo_clear-both"></div>
+
+           
+            <div class="oo_clear-left"></div>
+
+
+            
+        </div><!-- end oo_content-section //-->
+
+    </div><!-- end oo_content //-->
+</div><!-- end container -->
+<!--#include virtual="footer.shtml" -->
+
+
+<!-- Include Apply For Account Popup, Tablet & Mobile navigation function, FancyBox function & JavaScript tab function add -->
+<!--#include virtual="scripts.shtml" -->
+
+</body>
+</html>

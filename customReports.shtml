@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+    <title>Custom Report</title>
+    <!--#include virtual="head.shtml" -->
+</head>
+<body>
+<!--#include virtual="header.shtml" -->
+<div class="oo_pageIntroWrap">
+    <div class="oo_pageIntro">
+        <ol class="oo_breadcrumb">
+            <li><a href="javascript:void(0)" onclick="goToPage('myProjects.shtml?PlanType=')">Home</a></li>
+            <li><a href="javascript:void(0)">Custom Add-ons</a></li>
+            <li>Reports</li>
+        </ol>
+        <div class="oo_loginBar">
+            <script type="text/javascript">
+                try{f_cbload(true, oo.ServerName(), oo.AppKey("WelcomeMessage"));}catch(v_e){console.log(v_e);}
+            </script>
+        </div>
+<!--added by MJ to show apply for account msg -->
+            <div class="hidden_AccountData" style="display:none;">  
+            <script type="text/javascript">
+                
+                     try{f_cbload(true, oo.ServerName(), oo.AppKey("HiddenAccountIframe"));}catch(v_e){console.log(v_e);}
+           </script>
+           </div> 
+           <!-- End -->  
+
+        <div class="oo_clear-both"></div>
+
+        <h1>Custom Report</h1>
+<ul class="oo_toolNav">
+                <li class="oo_toolNav_item-refresh"><a href="javascript:void(0);" onclick="goToPage('customReports.shtml?PlanType=');"><i class="fa fa-refresh"></i> Refresh</a></li>
+               
+            </ul>
+        <ul class="oo_toolNav">
+        </ul>
+        <div class="oo_clear-both"></div>
+    </div><!-- end oo_pageIntro -->
+</div><!-- end oo_pageIntroWrap -->
+<div class="container">
+
+    <div id="oo_js_subNav" class="oo_subNav">
+        <ul class="oo_subNav-extras">
+            <li><p class="oo_subNav-heading">Custom Add-ons</p>
+              <a href="#oo_js_subContent-1">Custom Reports</a>
+                <li><a href="#oo_js_subContent-2_1">Custom Fields</a>
+                   <ul>
+                    <li><a href="#oo_js_subContent-2_1">Custom Fields</a></li>
+                    <li><a href="#oo_js_subContent-2_2">Drop Down for Custom Fields</a></li>
+                    </ul>
+                 </li>
+                <li><a href="#oo_js_subContent-4">Custom Report Fields</a></li>
+            </li>
+            <!--<li><a href="javascript:void(0);" onclick="homePagePopup('change-owner');">Recommendations</a></li>-->
+        </ul>
+    </div>
+
+    <div id="oo_js_subContent" class="oo_subContent">
+        <div id="oo_js_subContent-1">
+            <h2 class="oo_subContent-heading">Custom Report</h2>
+ 
+<ul class="oo_subContent-navCentered">
+                        <li><a href="javascript:void(0);" class="oo_btn oo_btn-primary" onclick="oo.modal.show('CustomReports_add',{refreshIframe: 'oo_iframe-customReports'});">Add New Custom Reports</a></li>
+                    </ul>
+
+            <iframe class="oo_content-iframe" id="oo_iframe-customReports" src="" data-pageKey="CustomReports" width="100%" height="300px" frameBorder="0" scrolling="no"></iframe>
+
+            <div class="oo_clear-both"></div>
+             <a class="oo_js_paging-next oo_subContent_pagingBottom-next" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a>
+            <div class="oo_clear-left"></div>
+        </div><!-- end oo_js_subContent-1 //-->
+
+        <div id="oo_js_subContent-2_1">
+            <h2 class="oo_subContent-heading">Custom Fields</h2>
+
+<ul class="oo_subContent-navCentered">
+                        <li><a href="javascript:void(0);" class="oo_btn oo_btn-primary" onclick="oo.modal.show('CustomFields_add',{refreshIframe: 'oo_iframe-customFields'});">Add New Custom Fields</a></li>
+                    </ul>
+
+
+            <iframe class="oo_content-iframe" id="oo_iframe-customFields" src="" data-pageKey="CustomFields" width="100%" height="300px" frameBorder="0" scrolling="no"></iframe>
+
+            <div class="oo_clear-both"></div>
+             <a class="oo_js_paging-next oo_subContent_pagingBottom-next" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a>
+            <div class="oo_clear-left"></div>
+        </div><!-- end oo_js_subContent-2 //-->
+
+
+        <div id="oo_js_subContent-2_2">
+            <h2 class="oo_subContent-heading">Drop Down for Custom Fields</h2>
+
+<ul class="oo_subContent-navCentered">
+                        <li><a href="javascript:void(0);" class="oo_btn oo_btn-primary" onclick="oo.modal.show('CustomLOVs_add',{refreshIframe: 'oo_iframe-customLOVs'});">Add New Drop Down List Values</a></li>
+                    </ul>
+
+
+
+
+            <iframe class="oo_content-iframe" id="oo_iframe-customLOVs" src="" data-pageKey="CustomLOVs" width="100%" height="300px" frameBorder="0" scrolling="no"></iframe>
+
+            <div class="oo_clear-both"></div>
+            <a class="oo_js_paging-next oo_subContent_pagingBottom-next" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a>
+            <div class="oo_clear-left"></div>
+        </div><!-- end oo_js_subContent-3 //-->
+
+
+        <div id="oo_js_subContent-4">
+            <h2 class="oo_subContent-heading">Custom Report Fields</h2>
+
+<ul class="oo_subContent-navCentered">
+                        <li><a href="javascript:void(0);" class="oo_btn oo_btn-primary" onclick="oo.modal.show('CustomReportFields_add',{refreshIframe: 'oo_iframe-customReportsFields'});">Add New Custom Report Fields</a></li>
+                    </ul>
+
+
+            <iframe class="oo_content-iframe" id="oo_iframe-customReportsFields" src="" data-pageKey="CustomReportsFields" width="100%" height="300px" frameBorder="0" scrolling="no"></iframe>
+
+            <div class="oo_clear-both"></div>
+            <a class="oo_js_paging-previous oo_subContent_pagingBottom-previous" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Previous</a>
+            <div class="oo_clear-left"></div>
+        </div><!-- end oo_js_subContent-4 //-->
+
+    </div><!-- end oo_subContent -->
+
+</div><!-- end container -->
+<!--#include virtual="footer.shtml" -->
+
+
+<!-- Include Apply For Account Popup, Tablet & Mobile navigation function, FancyBox function & JavaScript tab function add -->
+<!--#include virtual="scripts.shtml" -->
+
+</body>
+</html>

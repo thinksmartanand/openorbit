@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+    <title>Interactive Value Stream Map</title>
+    <!--#include virtual="head.shtml" -->
+
+</head>
+<body>
+<div id="oo_iframe-ProcessHeader" class="oo_page-ProcessReportsHeader" hidden>
+                <script type="text/javascript">
+                    //<![CDATA[
+                    try{f_cbload(true, oo.ServerName(), oo.AppKey("ProcessReportsHeader"));}catch(v_e){console.log(v_e);}
+                    //]]>
+                    
+                   
+                </script>
+            </div><!-- end oo_page-ProcessReportsHeader //-->
+
+ <iframe src="" id="oo_iframe-interactiveVSMPrintContainer" class="oo_content-iframe" data-pageKey="interactiveVSMPrintContainer" data-pageParams="ProjectID,ProcessID" width="100%" height="9000px" scrolling="yes"></iframe></body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+    <title>Edit Permitted Projects</title>
+    <!--#include virtual="head.shtml" -->
+</head>
+<body>
+<!--#include virtual="header.shtml" -->
+<div class="oo_pageIntroWrap">
+    <div class="oo_pageIntro">
+        <ol class="oo_breadcrumb">
+            <li><a href="javascript:void(0)">Projects</a></li>
+            <li>Editable Projects</li>
+        </ol>
+        <div class="oo_loginBar">
+            <script type="text/javascript">
+                try{f_cbload(true, oo.ServerName(), oo.AppKey("WelcomeMessage"));}catch(v_e){console.log(v_e);}
+            </script>
+        </div>
+        <div class="oo_clear-both"></div>
+
+        <h1>Edit Permitted Projects</h1>
+
+        <ul class="oo_toolNav">
+            <li><a href="javascript:void(0);" onClick="goToPage('myEditPerProjectsSearch.shtml?PlanType=')" class="oo_btn oo_btn-secondary">Search</a></li>
+        </ul>
+        <div class="oo_clear-both"></div>
+    </div><!-- end oo_pageIntro -->
+</div><!-- end oo_pageIntroWrap -->
+<div class="container">
+    <div id="resultdiv" class="oo_content">
+        <div class="oo_content-section">
+            <script type="text/javascript">
+                try{f_cbload(true, oo.ServerName(), oo.AppKey("MyEditPermittedProjects"));}catch(v_e){;}
+            </script>
+        </div><!-- end oo_content-section //-->
+    </div><!-- end oo_content //-->
+</div><!-- end container -->
+<!--#include virtual="footer.shtml" -->
+
+
+<!-- Include Apply For Account Popup, Tablet & Mobile navigation function, FancyBox function & JavaScript tab function add -->
+<!--#include virtual="scripts.shtml" -->
+
+</body>
+</html>

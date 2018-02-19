@@ -1,0 +1,251 @@
+@import (reference) "oo.shared.resources.less";
+
+/* Project nameandstatus caspio datapage */
+.oo_pageIntro .oo_page-nameAndStatus table,
+.oo_pageIntro .oo_page-nameAndStatus_T table,
+.oo_pageIntro .oo_page-nameAndStatus_V table {
+  display: block;
+  position: relative;
+  border: none;
+  background: none;
+  padding-right: 230px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 800px) {
+  .oo_pageIntro .oo_page-nameAndStatus table,
+  .oo_pageIntro .oo_page-nameAndStatus_T table,
+  .oo_pageIntro .oo_page-nameAndStatus_V table {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .oo_pageIntro .oo_page-nameAndStatus table,
+  .oo_pageIntro .oo_page-nameAndStatus_T table,
+  .oo_pageIntro .oo_page-nameAndStatus_V table {
+    padding-bottom: 35px;
+  }
+}
+.oo_pageIntro .oo_page-nameAndStatus tr,
+.oo_pageIntro .oo_page-nameAndStatus_T tr,
+.oo_pageIntro .oo_page-nameAndStatus_V tr {
+  background: none!important;
+  display: block;
+  min-width: 600px;
+}
+@media screen and (max-width: 600px) {
+  .oo_pageIntro .oo_page-nameAndStatus tr,
+  .oo_pageIntro .oo_page-nameAndStatus_T tr,
+  .oo_pageIntro .oo_page-nameAndStatus_V tr {
+    min-width: 400px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .oo_pageIntro .oo_page-nameAndStatus tr,
+  .oo_pageIntro .oo_page-nameAndStatus_T tr,
+  .oo_pageIntro .oo_page-nameAndStatus_V tr {
+    min-width: 300px;
+  }
+}
+
+.oo_pageIntro .oo_page-nameAndStatus th,
+.oo_pageIntro .oo_page-nameAndStatus_T th,
+.oo_pageIntro .oo_page-nameAndStatus_V th {
+  display: none;
+}
+.oo_pageIntro .oo_page-nameAndStatus td,
+.oo_pageIntro .oo_page-nameAndStatus_T td,
+.oo_pageIntro .oo_page-nameAndStatus_V td {
+  display: block;
+  padding: 5px 0 10px;
+  font-size: 0.9em;
+  border: none;
+  height: auto;
+  line-height: normal;
+}
+.oo_pageIntro .oo_page-nameAndStatus td:first-child,
+.oo_pageIntro .oo_page-nameAndStatus_T td:first-child,
+.oo_pageIntro .oo_page-nameAndStatus_V td:first-child {
+  font-size: 1.5em;
+  padding: 0;
+  height: auto;
+  color: #454545;
+}
+
+.oo_pageIntro .oo_page-nameAndStatus td:nth-child(2),
+.oo_pageIntro .oo_page-nameAndStatus_T td:nth-child(2),
+.oo_pageIntro .oo_page-nameAndStatus_V td:nth-child(2) {
+  color: #949494;
+  font-size: 0.9em;
+  font-weight: 300;
+  padding-top: 5px;
+  padding-bottom: 0;
+  max-width: 600px;
+}
+@media screen and (max-width: 600px) {
+  .oo_pageIntro .oo_page-nameAndStatus td:nth-child(2),
+  .oo_pageIntro .oo_page-nameAndStatus_T td:nth-child(2),
+  .oo_pageIntro .oo_page-nameAndStatus_V td:nth-child(2) {
+    max-width: 400px;
+  }
+}
+.oo_pageIntro .oo_page-nameAndStatus td:nth-child(3):before,
+.oo_pageIntro .oo_page-nameAndStatus_T td:nth-child(3):before,
+.oo_pageIntro .oo_page-nameAndStatus_V td:nth-child(3):before {
+  display: inline-block;
+  content: "This project is:";
+  font-weight: 300;
+  color: #949494;
+  padding: 0 10px 0 0;
+}
+.oo_pageIntro .oo_page-nameAndStatus td:nth-child(3),
+.oo_pageIntro .oo_page-nameAndStatus_T td:nth-child(3),
+.oo_pageIntro .oo_page-nameAndStatus_V td:nth-child(3) {
+
+}
+.oo_pageIntro .oo_page-nameAndStatus td:nth-child(4),
+.oo_pageIntro .oo_page-nameAndStatus_T td:nth-child(4),
+.oo_pageIntro .oo_page-nameAndStatus_V td:nth-child(4){
+  position: absolute;
+  bottom: 0;
+  right: 180px;
+}
+.oo_pageIntro .oo_page-nameAndStatus td input[type="text"],
+.oo_pageIntro .oo_page-nameAndStatus td textarea,
+.oo_pageIntro .oo_page-nameAndStatus td select,
+.oo_pageIntro .oo_page-nameAndStatus_T td input[type="text"],
+.oo_pageIntro .oo_page-nameAndStatus_T td textarea,
+.oo_pageIntro .oo_page-nameAndStatus_T td select,
+.oo_pageIntro .oo_page-nameAndStatus_V td input[type="text"],
+.oo_pageIntro .oo_page-nameAndStatus_V td textarea,
+.oo_pageIntro .oo_page-nameAndStatus_V td select {
+  font-size: 1.1em!important;
+  font-weight: normal!important;
+  line-height: 1.6em!important;
+  border-color: #d7d7d7!important;
+  background: #fff!important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+.oo_pageIntro .oo_page-nameAndStatus td input[type="text"],
+.oo_pageIntro .oo_page-nameAndStatus_T td input[type="text"],
+.oo_pageIntro .oo_page-nameAndStatus_V td input[type="text"] {
+  font-size: 0.667em!important;
+  height: 30px!important;
+}
+.oo_pageIntro .oo_page-nameAndStatus td select,
+.oo_pageIntro .oo_page-nameAndStatus_T td select,
+.oo_pageIntro .oo_page-nameAndStatus_V td select {
+  height: 30px!important;
+  padding-left: 2px;
+}
+.oo_pageIntro .oo_page-nameAndStatus td textarea,
+.oo_pageIntro .oo_page-nameAndStatus_T td textarea,
+.oo_pageIntro .oo_page-nameAndStatus_V td textarea {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.oo_pageIntro .oo_page-nameAndStatus td:nth-child(2) span,
+.oo_pageIntro .oo_page-nameAndStatus_T td:nth-child(2) span,
+.oo_pageIntro .oo_page-nameAndStatus_V td:nth-child(2) span {
+  display: block;
+  padding-bottom: 5px;
+}
+.oo_pageIntro .oo_page-nameAndStatus td:first-child span:before,
+.oo_pageIntro .oo_page-nameAndStatus td:nth-child(2) span:before,
+.oo_pageIntro .oo_page-nameAndStatus_T td:first-child span:before,
+.oo_pageIntro .oo_page-nameAndStatus_T td:nth-child(2) span:before,
+.oo_pageIntro .oo_page-nameAndStatus_V td:first-child span:before,
+.oo_pageIntro .oo_page-nameAndStatus_V td:nth-child(2) span:before {
+  display: inline-block;
+  content: "Project name";
+  font-weight: 300;
+  color: #949494;
+  padding: 0 10px 0 0;
+}
+.oo_pageIntro .oo_page-nameAndStatus td:first-child span:before,
+.oo_pageIntro .oo_page-nameAndStatus_T td:first-child span:before,
+.oo_pageIntro .oo_page-nameAndStatus_V td:first-child span:before {
+  font-size: 0.6em;
+
+}
+.oo_pageIntro .oo_page-nameAndStatus td:nth-child(2) span:before,
+.oo_pageIntro .oo_page-nameAndStatus_T td:nth-child(2) span:before,
+.oo_pageIntro .oo_page-nameAndStatus_V td:nth-child(2) span:before {
+  content: "Project description";
+  padding-top: 5px;
+}
+
+
+/* Sign up datapage */
+.oo_page-signUp {
+}
+.oo_page-signUp table tr:nth-last-child(2) td:first-child {
+  text-align: right!important;
+  vertical-align: middle!important;
+}
+.oo_page-signUp table tr:nth-last-child(2) td:first-child label {
+  display: block!important;
+}
+.oo_page-signUp table tr:nth-last-child(2) td:last-child {
+  text-align: left;
+  vertical-align: middle!important;
+}
+.oo_page-signUp table tr:nth-last-child(2) td:last-child span {
+  display: inline-block!important;
+  height: 24px!important;
+  margin: 0;
+  padding: 0;
+}
+.oo_page-signUp table tr:nth-last-child(2) td:last-child span input {
+  display: inline-block!important;
+  margin: 0!important;
+  padding: 0!important;
+}
+
+/* Test VSM Container datapage */
+.oo_page-testvsm,
+.oo_page-reportVSM,
+.oo_page-reportFishbone {
+  width: 90%;
+}
+.oo_page-testvsm iframe,
+.oo_page-reportVSM iframe,
+.oo_page-reportFishbone iframe {
+  display: block;
+  width: 100%!important;
+  min-height: 400px;
+}
+
+.oo_page-ProcessReportsHeader {
+  position: absolute;
+  left: 140px;
+  bottom: 15px;
+}
+.oo_page-ProcessReportsHeader:before {
+  display: block;
+  font-size: 1.3em;
+  color: #454545;
+  content: '';
+  padding: 0 0 5px 5px;
+}
+.oo_page-reportVSM .oo_page-ProcessReportsHeader:before {
+  content: 'Value Stream Map';
+}
+.oo_page-reportFishbone .oo_page-ProcessReportsHeader:before {
+  content: 'Fishbone Report';
+}
+.oo_page-ProcessReportsHeader > form > table > tbody > tr > th,
+.oo_page-ProcessReportsHeader > form > table > tbody > tr > td {
+  padding: 0;
+}
+.oo_page-ProcessReportsHeader table table tr td span {
+  color: @palette-blue1!important;
+  font-weight: normal!important;
+}
+.oo_page-ProcessReportsHeader table table tr td:first-child {
+  font-weight: 300!important;
+}

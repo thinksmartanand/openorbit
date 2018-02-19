@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+    <title>Custom Solutions</title>
+    <!--#include virtual="head.shtml" -->
+</head>
+<body>
+<!--#include virtual="header.shtml" -->
+<div class="oo_pageIntroWrap">
+    <div class="oo_pageIntro">
+        <ol class="oo_breadcrumb">
+            <li><a href="javascript:void(0)" onClick="goToPage('myProjects.shtml?PlanType=')">Home</a></li>
+            <li><a href="javascript:void(0)">Custom Add-ons</a></li>
+            <li>Solutions</li>
+        </ol>
+        <div class="oo_loginBar">
+            <script type="text/javascript">
+                try{f_cbload(true, oo.ServerName(), oo.AppKey("WelcomeMessage"));}catch(v_e){console.log(v_e);}
+            </script>
+        </div>
+
+<!--added by MJ to show apply for account msg -->
+            <div class="hidden_AccountData" style="display:none;">  
+            <script type="text/javascript">
+                
+                     try{f_cbload(true, oo.ServerName(), oo.AppKey("HiddenAccountIframe"));}catch(v_e){console.log(v_e);}
+           </script>
+           </div> 
+           <!-- End -->  
+
+        <div class="oo_clear-both"></div>
+
+        <h1>Maintain Custom Solutions and Custom Recommendations for Solutions</h1>
+<!--
+        <ul class="oo_toolNav">
+            <li><a href="javascript:void(0);" onClick="goToPage('myProjectsSearch.shtml?PlanType=')" class="oo_btn oo_btn-secondary">Search</a></li>
+        </ul> -->
+        <div class="oo_clear-both"></div>
+    </div><!-- end oo_pageIntro -->
+</div><!-- end oo_pageIntroWrap -->
+<div class="container">
+
+    <div id="oo_js_subNav" class="oo_subNav">
+        <ul class="oo_subNav-extras">
+            <li><p class="oo_subNav-heading">Custom Add-ons</p>
+                <a href="#oo_js_subContent-1">Custom Solutions</a>
+                <a href="#oo_js_subContent-2">Solution Recommendations</a>
+            </li>
+            <!--<li><a href="javascript:void(0);" onclick="homePagePopup('change-owner');">Recommendations</a></li>-->
+        </ul>
+    </div>
+
+    <div id="oo_js_subContent" class="oo_subContent">
+        <div id="oo_js_subContent-1">
+            <h2 class="oo_subContent-heading">Custom Solutions</h2>
+            <a class="oo_js_paging-next oo_subContent_pagingTop-next" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a>
+            <div class="oo_clear-right"></div>
+
+            <script type="text/javascript">
+                try{f_cbload(true, oo.ServerName(), oo.AppKey("CustomSolutions"));}catch(v_e){;}
+            </script>
+
+            <a class="oo_js_paging-next oo_subContent_pagingBottom-next" href="javascript:void(0)">Next <i class="fa fa-angle-right"></i></a>
+            <div class="oo_clear-right"></div>
+        </div><!-- end oo_js_subContent-1 //-->
+
+        <div id="oo_js_subContent-2">
+            <h2 class="oo_subContent-heading">Custom Recommendations for Solutions</h2>
+
+            <ul class="oo_nav-centered">
+                <li><a href="javascript:void(0);" class="oo_btn-multiline oo_btn-primary" onclick="oo.modal.show('RecommendStdSolutionforStdCause');">Recommend Standard Solution<br/>For Standard Cause</a></li>
+                <li><a href="javascript:void(0);" class="oo_btn-multiline oo_btn-primary" onclick="oo.modal.show('RecommendCustomSolutionforStdCause');">Recommend Custom Solution<br/>For Standard Cause</a></li>
+                <li><a href="javascript:void(0);" class="oo_btn-multiline oo_btn-primary" onclick="oo.modal.show('RecommendStdSolutionforCustomCause');">Recommend Standard Solution<br/>For Custom Cause</a></li>
+                <li><a href="javascript:void(0);" class="oo_btn-multiline oo_btn-primary" onclick="oo.modal.show('RecommedCustomSolutionforCustomCause');">Recommend Custom Solution<br/>For Custom Cause</a></li>
+            </ul>
+            <div class="oo_clear-left"></div>
+
+            <iframe class="oo_content-iframe" id="oo_iframe-recommendSolutions" src="" data-pageKey="RecommendSolutions" width="100%" height="300px" frameBorder="0" scrolling="no"></iframe>
+
+            <div class="oo_clear-both"></div>
+            <a class="oo_js_paging-previous oo_subContent_pagingBottom-previous" href="javascript:void(0)"><i class="fa fa-angle-left"></i> Previous</a>
+            <div class="oo_clear-left"></div>
+        </div><!-- end oo_js_subContent-2 //-->
+
+    </div><!-- end oo_subContent -->
+
+</div><!-- end container -->
+<!--#include virtual="footer.shtml" -->
+
+
+<!-- Include Apply For Account Popup, Tablet & Mobile navigation function, FancyBox function & JavaScript tab function add -->
+<!--#include virtual="scripts.shtml" -->
+
+</body>
+</html>

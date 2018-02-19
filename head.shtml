@@ -1,0 +1,47 @@
+<!-- TODO: possible for cleanup - remove unneeded js and css //-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="stylesheet" href="content/css/font-awesome.min.css" />
+<link rel="stylesheet" href="content/css/oo.website.css" />
+
+<link rel="stylesheet" href="content/css/core-menu.css" />
+<link rel="stylesheet" href="content/css/charcoal-menu.css" />
+<link rel="stylesheet" href="content/css/menu.css" />
+
+<script type='text/javascript' src='content/js/jquery-2.1.4.min.js'></script>
+<script type='text/javascript' src='content/js/jquery-ui.min.js'></script>
+<script type="text/javascript" src="https://c0amf816.caspio.com/scripts/embed.js"></script>
+<script type="text/javascript" src="content/plugins/jquery.jcookie/js/jcookie-min.js"></script>
+<script type="text/javascript" src="content/plugins/iframeResizer/js/iframeResizer.min.js"></script>
+<script type="text/javascript" src="content/plugins/jquery.tabletojson/js/jquery.tabletojson.min.js"></script>
+<script type="text/javascript" src="content/js/oo.shared.base.js"></script>
+<script type="text/javascript" src="content/js/oo.shared.config.js"></script>
+<script type="text/javascript" src="content/js/oo.shared.common.js"></script>
+<!--<script type="text/javascript" src="content/js/oo.shared.cookie.js"></script>-->
+<script type="text/javascript" src="content/js/oo.shared.track.js"></script>
+<script type="text/javascript" src="content/js/oo.website.menus.js"></script>
+<script type="text/javascript" src="content/js/oo.website.iframe.js"></script>
+<script type="text/javascript" src="content/js/oo.website.modal.js"></script>
+<script type="text/javascript" src="content/js/oo.website.help.js"></script>
+<script type="text/javascript" src="content/js/oo.website.subContent.js"></script>
+<script type="text/javascript" src="content/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="content/js/oo.footer.js"></script>
+<script type='text/javascript'>
+//<![CDATA[
+    var settings = {"screenMotion":"1","cookies":""};
+//]]>
+</script>
+
+<script type='text/javascript' src='content/js/menu-scripts.js'></script>
+
+<script type='text/javascript'>
+    //<![CDATA[
+    $(document).ready(function() {
+        oo.slidebar.init();
+        oo.subContent.init();
+        oo.iframe.init();
+    });
+    //]]>
+</script>

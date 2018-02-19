@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+    <title>My Projects</title>
+    <!--#include virtual="head.shtml" -->
+</head>
+<body>
+<!--#include virtual="header.shtml" -->
+    <div class="oo_pageIntroWrap">
+        <div class="oo_pageIntro">
+            <ol class="oo_breadcrumb">
+                <li><a href="javascript:void(0)">Home</a></li>
+                <li>My Projects</li>
+            </ol>
+            <div class="oo_loginBar">
+                <script type="text/javascript">
+                    try{f_cbload(true, oo.ServerName(), oo.AppKey("WelcomeMessage"));}catch(v_e){console.log(v_e);}
+                </script>
+            </div>
+            <!--added by MJ to show apply for account msg -->
+            <div class="hidden_AccountData" style="display:none;">  
+            <script type="text/javascript">
+                
+                     try{f_cbload(true, oo.ServerName(), oo.AppKey("HiddenAccountIframe"));}catch(v_e){console.log(v_e);}
+           </script>
+           </div> 
+           <!-- End -->  
+            <div class="oo_clear-both"></div>
+
+            <h1>My Projects</h1>
+
+            <!--<ul class="oo_toolNav">
+                <li><a href="javascript:void(0);" onClick="goToPage('myProjectsSearch.shtml?PlanType=')" class="oo_btn oo_btn-secondary">Search</a></li>
+            </ul>-->
+            <div class="oo_clear-both"></div>
+        </div><!-- end oo_pageIntro -->
+    </div><!-- end oo_pageIntroWrap -->
+    <div class="container">
+        <div id="resultdiv" class="oo_content">
+            <div class="oo_content-section">
+                <script type="text/javascript">
+                    try{f_cbload(true, oo.ServerName(), oo.AppKey("WikiPage"));}catch(v_e){;}
+                </script>
+            </div><!-- end oo_content-section //
+        </div><!-- end oo_content //-->
+    </div><!-- end container -->
+<!--#include virtual="footer.shtml" -->
+
+<!--#include virtual="scripts.shtml" -->
+ 
+
+</body>
+</html>
+

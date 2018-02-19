@@ -1,0 +1,86 @@
+{
+  "_args": [
+    [
+      "angular@1.5.0-rc.1",
+      "C:\\inetpub\\Hari"
+    ]
+  ],
+  "_from": "angular@1.5.0-rc.1",
+  "_id": "angular@1.5.0-rc.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/angular",
+  "_nodeVersion": "0.10.26",
+  "_npmUser": {
+    "email": "angular-core+npm@google.com",
+    "name": "angularcore"
+  },
+  "_npmVersion": "2.0.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "angular",
+    "raw": "angular@1.5.0-rc.1",
+    "rawSpec": "1.5.0-rc.1",
+    "scope": null,
+    "spec": "1.5.0-rc.1",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/angular/-/angular-1.5.0-rc.1.tgz",
+  "_shasum": "a4eb1d6e8110e370f8bb67ad169695b9fef3f026",
+  "_shrinkwrap": null,
+  "_spec": "angular@1.5.0-rc.1",
+  "_where": "C:\\inetpub\\Hari",
+  "author": {
+    "email": "angular-core+npm@google.com",
+    "name": "Angular Core Team"
+  },
+  "bugs": {
+    "url": "https://github.com/angular/angular.js/issues"
+  },
+  "dependencies": {},
+  "description": "HTML enhanced for web apps",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "a4eb1d6e8110e370f8bb67ad169695b9fef3f026",
+    "tarball": "http://registry.npmjs.org/angular/-/angular-1.5.0-rc.1.tgz"
+  },
+  "gitHead": "ef7d0e8bf6a33d44fe5d3b4d02c17d84d894b0ba",
+  "homepage": "http://angularjs.org",
+  "keywords": [
+    "angular",
+    "browser",
+    "client-side",
+    "framework"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "bclinkinbeard",
+      "email": "ben.clinkinbeard@gmail.com"
+    },
+    {
+      "name": "angularcore",
+      "email": "angular-core+npm@google.com"
+    },
+    {
+      "name": "petebd",
+      "email": "pete@bacondarwin.com"
+    }
+  ],
+  "name": "angular",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular/angular.js.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.5.0-rc.1"
+}
