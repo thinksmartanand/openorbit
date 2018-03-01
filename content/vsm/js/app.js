@@ -285,7 +285,7 @@ mainModule.controller("appCtrl", ['$rootScope', '$scope', '$uibModal', '$routePa
             } else if (str == "StepUpdate") {
                 url = url + "AppKey=ef404000c4a5d01f3fcb418e8790&cbUI=1&ProcessStepId=" + item.ProcessStepID;
             } else if (str == 'Footers') {
-                url = url + "AppKey=ef404000392ff16e737e485196b8?ProcessID=" + $scope.processID;
+                url = url + "AppKey=ef404000392ff16e737e485196b8&cbUI=1&ProcessID=" + $scope.processID;
             }
 
             return url;
@@ -303,7 +303,9 @@ mainModule.controller("appCtrl", ['$rootScope', '$scope', '$uibModal', '$routePa
                 url = serverUrl + "&cbUI=1&SolutionImpactID=" + item.SolutionImpactID;
             } else if (str == "StepUpdate") {
                 url = serverUrl + "&cbUI=1&ProcessStepId=" + item.ProcessStepID;
-            } 
+            } else if (str == 'Footers') {
+                url = serverUrl + "&cbUI=1&ProcessID=" + $scope.processID;
+            }
 
             if (isEmpty(serverUrl))
                 url = $scope.getServerUpdateUrl(str, item);
@@ -648,7 +650,7 @@ mainModule.controller("appCtrl", ['$rootScope', '$scope', '$uibModal', '$routePa
         }
 
         $scope.Update = function (serverUrl, str, item, title, stepName) {
-
+                
             var data = {
                 stepName: stepName,
                 title: title,
